@@ -1,12 +1,12 @@
 import React from 'react';
 import style from './Navigation.module.css';
-import {Button, Container, Nav, Navbar} from 'react-bootstrap';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 
 const Navigation = () => {
     return (
         <Navbar className={style.bg} expand="lg">
             <Container fluid>
-                <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+                <Navbar.Brand href="#">Apna Helper</Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav
@@ -14,7 +14,9 @@ const Navigation = () => {
                         style={{ maxHeight: '100px' }}
                         navbarScroll
                     >
-                        <Nav.Link href="#action1">Home</Nav.Link>
+                        <Nav.Link href="/">Home</Nav.Link>
+                        <Nav.Link href="/about-us">About</Nav.Link>
+                        <Nav.Link href="/contact-us">Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
