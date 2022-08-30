@@ -5,21 +5,22 @@
   "main": "server.js",
   "author": "Apna Helper Team",
   "license": "ISC",
-
   "scripts": {
-    "start": "nodemon server.js"
+    "dev": "nodemon -r esm server.js",
+    "start": "node -r esm server.js"
   },
-
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "dotenv": "^16.0.1",
+    "esm": "^3.2.25",
     "express": "^4.18.1",
     "express-async-errors": "^3.1.1",
     "gitignore": "^0.7.0",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.5.2"
   },
-
   "devDependencies": {
     "nodemon": "^2.0.19"
   }
-  
 }

@@ -1,1 +1,1 @@
-console.log("create models");
+export { default as User } from './user';

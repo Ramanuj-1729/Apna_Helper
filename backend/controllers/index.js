@@ -1,0 +1,2 @@
+export { default as customerRegisterController } from './auth/customerRegister/customerRegisterController';
+export { default as helperRegisterController } from './auth/helperRegister/helperRegisterController';

@@ -6,3 +6,18 @@
 3. Payment cash on delivery / online
 
 Process: customer create job with there amount and helper pick order with there amount if both convince with the amount then helper do work else in the app there are option for both the reduce the amount, if they convice then helper do work but if they not convince there are option for both to cancel the order and order goes to next helper. After complition of work customer have to pay amount + service charge by online through app or to helper by QR code or UPI id.
+
+In website user have two options -
+    1. Become a helper
+    2. Create Job 
+
+Backend:
+
+1. Helper
+    a. Registeration
+    b. Login
+    c. 
+
+2. Job Creater
+    a. Registeration
+    b. Login
