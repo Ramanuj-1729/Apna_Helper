@@ -53,6 +53,7 @@ const registerController = {
         let refresh_token;
         try {
             const result = await user.save();
+            console.log(result);
 
             // Token
             access_token = JwtService.sign({ _id: result._id, role: result.role });
