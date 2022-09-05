@@ -18,6 +18,8 @@ const registerController = {
 
         // Validation
         const registerSchema = Joi.object({
+            first_name: Joi.string().min(3).max(30).required(),
+            last_name: Joi.string().min(3).max(30),
             email: Joi.string().email().required(),
             password: Joi.string().pattern(new RegExp('^[a-zA-Z0-9]{3,30}$')).required(),
             repeat_password: Joi.ref('password')
@@ -35,7 +37,7 @@ const registerController = {
         } catch (err) {
             return next(err);
         }
-        const { email, password } = req.body;
+        const { first_name, last_name, email, password } = req.body;
 
         // Hash password
         const hashedPassword = await bcrypt.hash(password, 10);
@@ -43,6 +45,8 @@ const registerController = {
         // prepare the model
 
         const user = new User({
+            first_name,
+            last_name,
             email,
             password: hashedPassword
         });
