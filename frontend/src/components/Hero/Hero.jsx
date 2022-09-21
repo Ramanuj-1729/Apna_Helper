@@ -4,9 +4,7 @@ import styles from "./Hero.module.css";
 const Hero = () => {
   return (
     <div className={`${styles.hero}`}>
-      <div
-        className={`${styles.hero_content} flex justify-content items-center direction-col`}
-      >
+      <div className={`${styles.hero_content} flex justify-content items-center direction-col`} >
         <div className={styles.logo}>Apna Helper...</div>
         <div className={`${styles.button} `}>
           <button>Post your job</button>

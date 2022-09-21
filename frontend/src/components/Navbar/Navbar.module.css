@@ -1,5 +1,14 @@
 @import url('../../index.css');
 
+
+.header{
+    background-color: var(--white-color);
+    padding:0.5rem 5rem;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
 .header_left{
     color: var(--footer-color) ;
     flex: 50%;
@@ -33,8 +42,4 @@
 
 .header_left h2{
     font-weight: 600;
-}
-.header{
-        font-family: 'Roboto', sans-serif;
-        padding:0.5rem 5rem;
 }

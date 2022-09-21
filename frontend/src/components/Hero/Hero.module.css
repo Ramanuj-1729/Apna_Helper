@@ -4,13 +4,12 @@
     background-size: cover;
     background-position: center;
     position: relative;
-    height: 720px;
+    
+    height: 650px;
 }
 
 .hero_content {
-    transform: translate(-50%, 50%);
-    left: 50%;
-    position: absolute;
+    padding-top: 5rem;
 }
 
 .logo {
@@ -18,7 +17,6 @@
     font-size: 100px;
     font-weight: 600;
     text-shadow: 1px 2px grey;
-
 }
 
 .button button {
