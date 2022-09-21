@@ -1,5 +1,6 @@
-import React from 'react'
-import styles from "./Navbar.module.css"
+import React from 'react';
+import styles from "./Navbar.module.css";
+import {NavLink} from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -11,14 +12,14 @@ const Navbar = () => {
       <div
         className={`${styles.header_right} items-center justify-between `}
       >
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <a href="#">Log In</a>
+        <NavLink to="#">Home</NavLink>
+        <NavLink to="#">About</NavLink>
+        <NavLink to="#">Contact</NavLink>
+        <NavLink to="#">Log In</NavLink>
         <button>Sign Up</button>
       </div>
     </div>
   );
 }
 
-export default Navbar
+export default Navbar;

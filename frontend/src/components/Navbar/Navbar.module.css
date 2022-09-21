@@ -1,11 +1,14 @@
 @import url('../../index.css');
+
 .header_left{
     color: var(--footer-color) ;
     flex: 50%;
 }
+
 .header_right{
     flex: 50%;
 }
+
 .header_right a{
     text-decoration: none;
     color: var(--footer-color);
@@ -13,6 +16,7 @@
     font-size: 15px;
     font-weight: 400;
 }
+
 .header_right button{
     background-color: var(--green-color);
     border: none;
@@ -26,6 +30,7 @@
 .header_left h2{
     font-weight: 800;
 }
+
 .header{
         font-family: 'Roboto', sans-serif;
         padding:0.5rem 5rem;
