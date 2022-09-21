@@ -6,7 +6,7 @@ import fs from 'fs';
 import CustomErrorHandler from '../../services/CustomErrorHandler';
 
 const storage = multer.diskStorage({
-    destination: (req, file, cb) => cb(null, 'uploads'),
+    destination: (req, file, cb) => cb(null, 'uploads/helper'),
     filename: (req, file, cb) => {
         const uniqueName = `${Date.now()}-${Math.round(
             Math.random() * 1e9

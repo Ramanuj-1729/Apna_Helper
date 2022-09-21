@@ -1,112 +1,99 @@
+@import url('../../index.css');
+
 .footer_wrapper {
-    font-family: 'Roboto', sans-serif;
-    background-color: #161E2C;
-    color: white;
-    padding: 2.5rem 3.5rem;
+    background-color: var(--footer-color);
+    color: var(--white-color);
+    padding: 32px;
 }
 
-.footer_top {
-    flex: 1
+.footer_top_left{
+    flex: 60%;
 }
 
-.row1_content {
-    display: inline;
+.col {
+    margin: 0px 48px;
 }
 
-.row_items {
-    list-style-type: none;
-    /* Remove bullets */
-    padding: 0.5rem 0rem;
-    /* Remove padding */
-    margin: 0;
-    /* Remove margins */
-
+.col_heading {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.9;
 }
 
-.row_items li {
-    padding: 0.5rem 0rem;
+.col li {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.9;
 }
 
 .vertical_line {
-    padding: 0rem 1rem;
-    padding-left: 4rem;
+    margin: 0px 32px;
 }
 
-.row {
-    padding: 0rem 3rem;
+.footer_top_right{
+    flex: 40%;
+    width: auto;
 }
 
-.heading {
-    font-weight: 600;
+.footer_top_right button{
+    background: none;
+    color: var(--white-color);
+    border: 2px solid var(--white-color);
+    border-radius: 8px;
+    padding: 8px;
 }
 
-.googleplaybutton {
-    color: white;
-    cursor: pointer;
-    border-color: white;
-    border-radius: 7px;
-    background-color: transparent;
-    padding: 0.2rem 0.5rem;
-    margin: 2rem 2rem;
+.footer_top_right button i{
+    margin-right: 8px;
+    font-size: 22px;
 }
 
-.googleplayimage {
-    size: 20px;
+.getItOn{
+    font-size: 10px;
+    font-weight: 300;
 }
 
-.googleplaybuttontext {
-    font-size: 0.6rem;
+.googlePlay{
+    font-size: 14px;
+    font-weight: 400;
 }
 
-.gplaytext {
-    padding-left: 0rem 0.3rem;
+.social_media_icon{
+    margin-top: 32px;
 }
 
-.gplay {
-    padding-left: 0.5rem;
+.social_media_icon span{
+    margin: 0px 12px;
 }
 
-.footer_top_right {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
+.social_media_icon span i{
+    font-size: 25px;
+    margin: 0px 12px;
 }
 
-.social_media_icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.horizontal_line{
+    margin: 40px 0px;
 }
 
-.horizontal_line {
-    padding: 3rem 0rem;
+.footer_bottom_left{
+    flex: 60%;
 }
 
-.userhelper {
-    padding-left: 2rem;
+.footer_bottom_left span{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
 }
 
-.social_media_icon span {
-    margin: 0rem 1rem;
+.registered_user{
+    margin: 0px 48px;
 }
 
-.footer_bottom {
-    display: flex;
+.footer_bottom_right{
+    flex: 40%;
 }
 
-.footer_bottom_left {
-    flex: 50%;
-}
-
-.footer_bottom_right {
-    flex: 50%;
-    width: 100%;
-}
-
-.ru {
-    display: flex;
-    flex-direction: column;
-    padding: 0rem 1rem;
+.footer_bottom_right span{
+    font-size: 14ppx;
+    font-weight: 400;
 }
