@@ -5,6 +5,10 @@
     flex: 50%;
 }
 
+.header_left .logo{
+    font-weight: 700;
+}
+
 .header_right{
     flex: 50%;
 }
@@ -25,10 +29,6 @@
     padding:0.5rem 1rem;
     color: white;
     font-size: 1rem;
-}
-
-.header_left h2{
-    font-weight: 800;
 }
 
 .header{

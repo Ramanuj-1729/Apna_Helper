@@ -19,12 +19,17 @@
     justify-content: center;
 }
 
-.direction-col{
+.direction-col {
     flex-direction: column;
 }
 
-/* grid */
 
-.grid{
+/* grid */
+.grid {
     display: grid;
+}
+
+/* cursor pointer  */
+.pointer {
+    cursor: pointer;
 }

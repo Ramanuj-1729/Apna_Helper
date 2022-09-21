@@ -10,31 +10,31 @@ const Footer = () => {
                 <div className={`${styles.footer_top_left} flex`}>
                     <div className={`col-1 ${styles.col}`}>
                         <ul>
-                            <NavLink to='#'><h5 className={styles.col_heading}>Apna Helper</h5></NavLink>
-                            <NavLink to='#'><li>Become a helper</li></NavLink>
-                            <NavLink to='#'><li>Post a job</li></NavLink>
-                            <NavLink to='#'><li>Blog</li></NavLink>
-                            <NavLink to='#'><li>Team Diary</li></NavLink>
+                            <h5 className={styles.col_heading}>Apna Helper</h5>
+                            <NavLink to='#' className={styles.navlink} ><li>Become a helper</li></NavLink>
+                            <NavLink to='#' className={styles.navlink} ><li>Post a job</li></NavLink>
+                            <NavLink to='#' className={styles.navlink} ><li>Blog</li></NavLink>
+                            <NavLink to='#' className={styles.navlink} ><li>Team Diary</li></NavLink>
                         </ul>
                     </div>
 
                     <div className={`col-2 ${styles.col}`}>
                         <ul>
-                            <NavLink to='#'><h5 className={styles.col_heading}>About</h5></NavLink>
-                            <NavLink to='#'><li>About us</li></NavLink>
-                            <NavLink to='#'><li>Contact us</li></NavLink>
-                            <NavLink to='#'><li>How it works</li></NavLink>
-                            <NavLink to='#'><li>Carrers</li></NavLink>
-                            <NavLink to='#'><li>Sitemap</li></NavLink>
+                            <h5 className={styles.col_heading}>About</h5>
+                            <NavLink to='#' className={styles.navlink} ><li>About us</li></NavLink>
+                            <NavLink to='#' className={styles.navlink} ><li>Contact us</li></NavLink>
+                            <NavLink to='#' className={styles.navlink} ><li>How it works</li></NavLink>
+                            <NavLink to='#' className={styles.navlink} ><li>Carrers</li></NavLink>
+                            <NavLink to='#' className={styles.navlink} ><li>Sitemap</li></NavLink>
                         </ul>
                     </div>
 
                     <div className={`col-3 ${styles.col}`}>
                         <ul className={styles.row_items}>
-                            <NavLink to='#'><h5 className={styles.col_heading}>Terms</h5></NavLink>
-                            <NavLink to='#'><li>Terms and Conditions</li></NavLink>
-                            <NavLink to='#'><li>Privacy Policy</li></NavLink>
-                            <NavLink to='#'><li>Code of Conduct</li></NavLink>
+                            <h5 className={styles.col_heading}>Terms</h5>
+                            <NavLink to='#' className={styles.navlink} ><li>Terms and Conditions</li></NavLink>
+                            <NavLink to='#' className={styles.navlink} ><li>Privacy Policy</li></NavLink>
+                            <NavLink to='#' className={styles.navlink} ><li>Code of Conduct</li></NavLink>
                         </ul>
                     </div>
                 </div>
@@ -44,8 +44,7 @@ const Footer = () => {
                 </div>
 
                 <div className={`${styles.footer_top_right} flex items-center justify-center direction-col`}>
-                    <NavLink to='#'>
-                        <button className="flex items-center">
+                        <button type="button" className={`${styles.googlePlayBtn} flex items-center pointer`}>
                             <i className="fa-brands fa-google-play fa-lg"></i>
 
                             <div className={`${styles.btn_text} flex direction-col items-center justify-center`}>
@@ -55,30 +54,20 @@ const Footer = () => {
                                 <span className={styles.googlePlay}>Google Play</span>
                             </div>
                         </button>
-                    </NavLink>
 
                     <div className={styles.social_media_icon}>
-                        <NavLink to='#'>
                             <span>
                                 <i className="fa-brands fa-youtube fa-xl"></i>
                             </span>
-                        </NavLink>
-
-                        <NavLink to='#'>
                             <span>
                                 <i className="fa-brands fa-instagram fa-xl"></i>
                             </span>
-                        </NavLink>
-                        <NavLink to='#'>
                             <span>
                                 <i className="fa-brands fa-facebook fa-xl"></i>
                             </span>
-                        </NavLink>
-                        <NavLink to='#'>
                             <span>
                                 <i className="fa-brands fa-twitter fa-xl"></i>
                             </span>
-                        </NavLink>
                     </div>
                 </div>
             </div>

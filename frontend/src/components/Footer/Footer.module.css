@@ -6,7 +6,7 @@
     padding: 32px;
 }
 
-.footer_top_left{
+.footer_top_left {
     flex: 60%;
 }
 
@@ -17,25 +17,27 @@
 .col_heading {
     font-size: 18px;
     font-weight: 400;
-    line-height: 1.9;
+    line-height: 1.6;
+    margin-bottom: 8px;
 }
 
 .col li {
     font-size: 16px;
     font-weight: 300;
-    line-height: 1.9;
+    line-height: 1.2;
+    margin-bottom: 8px;
 }
 
 .vertical_line {
     margin: 0px 32px;
 }
 
-.footer_top_right{
+.footer_top_right {
     flex: 40%;
     width: auto;
 }
 
-.footer_top_right button{
+.googlePlayBtn {
     background: none;
     color: var(--white-color);
     border: 2px solid var(--white-color);
@@ -43,57 +45,85 @@
     padding: 8px;
 }
 
-.footer_top_right button i{
+.googlePlayBtn i {
     margin-right: 8px;
     font-size: 22px;
 }
 
-.getItOn{
+.getItOn {
     font-size: 10px;
     font-weight: 300;
 }
 
-.googlePlay{
+.googlePlay {
     font-size: 14px;
     font-weight: 400;
 }
 
-.social_media_icon{
+.social_media_icon {
     margin-top: 32px;
 }
 
-.social_media_icon span{
+.social_media_icon span {
     margin: 0px 12px;
+    cursor: pointer;
 }
 
-.social_media_icon span i{
+.social_media_icon span i {
     font-size: 25px;
     margin: 0px 12px;
 }
 
-.horizontal_line{
+.horizontal_line {
     margin: 40px 0px;
 }
 
-.footer_bottom_left{
+.footer_bottom_left {
     flex: 60%;
 }
 
-.footer_bottom_left span{
+.footer_bottom_left span {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.5;
 }
 
-.registered_user{
+.registered_user {
     margin: 0px 48px;
 }
 
-.footer_bottom_right{
+.footer_bottom_right {
     flex: 40%;
 }
 
-.footer_bottom_right span{
+.footer_bottom_right span {
     font-size: 14ppx;
     font-weight: 400;
+}
+
+.navlink {
+    text-decoration: none;
+    position: relative;
+    color: var(--white-color);
+}
+
+.navlink:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--white-color);
+    transform-origin: bottom right;
+    -webkit-transition: transform 0.4s ease;
+    -moz-transition: transform 0.4s ease;
+    -o-transition: transform 0.4s ease;
+    transition: transform 0.4s ease;
+}
+
+.navlink:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
