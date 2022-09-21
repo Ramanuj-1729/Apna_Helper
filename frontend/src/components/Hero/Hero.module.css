@@ -1,0 +1,38 @@
+.hero {
+    background-image: url(../../../../img/headerimagefinal.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 720px;
+}
+
+.hero_content {
+    transform: translate(-50%, 50%);
+    left: 50%;
+    position: absolute;
+}
+
+.logo {
+    color: white;
+    font-size: 100px;
+    font-weight: 600;
+    text-shadow: 1px 2px grey;
+
+}
+
+.button button {
+    color: #06BCFB;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 20px;
+    border: 1px solid #06BCFB;
+    outline: none;
+    margin-top: 1.5rem;
+    box-shadow: 1px 2px grey;
+}
+
+.button button:last-child {
+    margin-left: 7rem;
+}

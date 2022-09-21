@@ -10,7 +10,12 @@ html {
 }
 
 *{
+<<<<<<< HEAD
     font-family: 'Roboto', sans-serif;
+=======
+    font-family: 'poppins', sans-serif;
+
+>>>>>>> 6f3bee4 (added hero)
 }
 
 body,
