@@ -1,5 +1,6 @@
+@import url('../../index.css');
 .header_left{
-    color:#293855 ;
+    color: var(--footer-color) ;
     flex: 50%;
 }
 .header_right{
@@ -7,13 +8,13 @@
 }
 .header_right a{
     text-decoration: none;
-    color: #293855;
+    color: var(--footer-color);
     padding : 0rem 1rem;
     font-size: 15px;
     font-weight: 400;
 }
 .header_right button{
-    background-color: #3FC495;
+    background-color: var(--green-color);
     border: none;
     outline: none;
     border-radius: 5px;
