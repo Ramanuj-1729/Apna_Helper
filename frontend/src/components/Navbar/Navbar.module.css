@@ -1,0 +1,31 @@
+.header_left{
+    color:#293855 ;
+    flex: 50%;
+}
+.header_right{
+    flex: 50%;
+}
+.header_right a{
+    text-decoration: none;
+    color: #293855;
+    padding : 0rem 1rem;
+    font-size: 15px;
+    font-weight: 400;
+}
+.header_right button{
+    background-color: #3FC495;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding:0.5rem 1rem;
+    color: white;
+    font-size: 1rem;
+}
+
+.header_left h2{
+    font-weight: 800;
+}
+.header{
+        font-family: 'Roboto', sans-serif;
+        padding:0.5rem 5rem;
+}
