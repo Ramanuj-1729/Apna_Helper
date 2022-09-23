@@ -1,3 +1,4 @@
+/* css reset  */
 html {
     box-sizing: border-box;
     font-size: 16px;
@@ -10,9 +11,9 @@ html {
 }
 
 *{
-
     font-family: 'poppins', sans-serif;
-
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body,
@@ -40,10 +41,16 @@ img {
     height: auto;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 /* root  */
 :root{
     --white-color: #fff;
     --footer-color: #161E2C;
-    --green-color:#3FC495;
+    --green-color:#00cc99;
+    --font-color: #000000;
+    --gray-color: #37474F;
 }

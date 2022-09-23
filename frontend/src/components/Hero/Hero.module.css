@@ -1,11 +1,10 @@
 .hero {
-    background-image: url(../../../../img/headerimagefinal.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../../../public/images/hero-img.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
-    
-    height: 650px;
+    height: calc(100vh - 65px);
 }
 
 .hero_content {

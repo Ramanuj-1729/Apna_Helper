@@ -1,45 +1,70 @@
 @import url('../../index.css');
 
-
-.header{
+.navbar {
     background-color: var(--white-color);
-    padding:0.5rem 5rem;
+    padding: 6px 80px;
     position: sticky;
     top: 0px;
     z-index: 10;
 }
 
-.header_left{
-    color: var(--footer-color) ;
-    flex: 50%;
+.drope_shadow {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 
-.header_left .logo{
+.navbar_left .logo {
+    font-size: 32px;
+    color: var(--green-color);
     font-weight: 700;
 }
 
-.header_right{
-    flex: 50%;
-}
-
-.header_right a{
-    text-decoration: none;
-    color: var(--footer-color);
-    padding : 0rem 1rem;
-    font-size: 15px;
+.navbar_right a {
+    color: var(--font-color);
+    padding: 17px 6px;
+    font-size: 16px;
     font-weight: 400;
+    margin-right: 32px;
 }
 
-.header_right button{
-    background-color: var(--green-color);
-    border: none;
+.navbar_right a:hover,
+.navbar_right a:focus {
+    border-bottom: 2px solid var(--green-color);
+    font-weight: 500;
+    color: var(--green-color);
+}
+
+.auth {
+    border-left: 1px solid rgba(55, 71, 79, 0.5);
+}
+
+.auth .navBtn {
+    cursor: pointer;
     outline: none;
-    border-radius: 5px;
-    padding:0.5rem 1rem;
-    color: white;
-    font-size: 1rem;
+    border-radius: 4px;
+    margin-left: 32px;
+    border: 1px solid var(--green-color);
+    padding: 6px 32px;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 0 10px rgba(0, 204, 153, 0.2);
+    transition: all 0.4s ease-in-out;
 }
 
-.header_left h2{
-    font-weight: 600;
+.auth .navBtn:hover {
+    box-shadow: 0 0 10px rgba(0, 204, 153, 0.6);
+}
+
+.auth .login {
+    background-color: var(--white-color);
+    color: var(--green-color);
+}
+
+.auth .login:hover {
+    background-color: var(--green-color);
+    color: var(--white-color);
+}
+
+.auth .signup {
+    color: var(--white-color);
+    background-color: var(--green-color);
 }
