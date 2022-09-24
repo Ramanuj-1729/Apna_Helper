@@ -1,0 +1,13 @@
+.wrapper{
+    background-color: #274A8C;
+    color: white;
+}
+.left{
+    flex: 50%;
+}
+/* .right img{
+        flex: 50%;
+
+        height: 30px;
+        width: 20px;
+    } */
