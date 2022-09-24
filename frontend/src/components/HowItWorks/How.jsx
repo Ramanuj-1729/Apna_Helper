@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./How.module.css";
-var path = require("path");
+
 const How = () => {
   return (
     <div className={`${styles.wrapper}`}>
@@ -20,7 +20,7 @@ const How = () => {
             Find the right helper to get your work done within minutes.
           </span>
 
-          <h3>Protected payments , every tiime</h3>
+          <h3>Protected payments, every tiime</h3>
           <span>
             Always know what you'll pay upfront. Pay when your work is done.
           </span>
@@ -31,11 +31,11 @@ const How = () => {
             anytime, anywhere.
           </span>
         </div>
+
         <div className={styles.right}>
-          <img
-            src={require("D:Apna Helper MasterApna_Helper\frontendsrccomponentsHowItWorkshero-img.png")}
-          />
+          <img src="images/how1.png" alt="img" />
         </div>
+
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../../../public/images/hero-img.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.1)), url('/public/images/hero-img.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -13,9 +13,9 @@
 
 .logo {
     color: white;
-    font-size: 100px;
+    font-size: 96px;
     font-weight: 600;
-    text-shadow: 1px 2px grey;
+    text-shadow: 0px 11px 10px rgba(81,67,21,0.8);
 }
 
 .button button {
