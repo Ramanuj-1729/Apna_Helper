@@ -10,7 +10,7 @@ html {
     box-sizing: inherit;
 }
 
-*{
+* {
     font-family: 'poppins', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -45,16 +45,17 @@ a {
     text-decoration: none;
 }
 
-body{
-    background-color: #FEF7F7;
+body {
+    background-color: #F7F7F7;
 }
 
 
 /* root  */
-:root{
+:root {
     --white-color: #fff;
     --footer-color: #161E2C;
-    --green-color:#00cc99;
+    --green-color: #00cc99;
     --font-color: #000000;
     --gray-color: #37474F;
+    --body-color: #F7F7F7;
 }

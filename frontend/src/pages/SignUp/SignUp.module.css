@@ -1,0 +1,42 @@
+.wrapper {
+    background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.1)), url('/public/images/signup-img-2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: calc(95vh - 65px);
+    position: relative
+}
+
+.box {
+    background-color: white;
+    position: absolute;
+    align-items: center;
+    justify-items: center;
+    /* margin: 3rem 30rem; */
+    border-radius: 10px;
+
+    width: 607px;
+    height: 500px;
+    left: 415px;
+    top: 100px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.06);
+    border-radius: 20px;
+
+}
+
+.google {
+    padding: 0.2rem 2rem;
+    border-radius: 25px;
+}
+
+#place{
+        border-radius: 100px;
+}
+.submit{
+    background-color: var(--green-color);
+    color: white;
+    border-radius: 25px;
+
+}

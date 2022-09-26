@@ -33,8 +33,8 @@ const OurPrinciples = () => {
         </div>
 
         <div className={`${styles.right} flex direction-col`}>
-          <img src="images/how1.png" alt="img" />
-          <img src="images/how2.png" alt="img" />
+          <img src="images/principle-img-1.png" alt="img" />
+          <img src="images/principle-img-2.png" alt="img" />
         </div>
       </div>
     </div>

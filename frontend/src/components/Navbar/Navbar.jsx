@@ -15,21 +15,34 @@ const Navbar = () => {
     }
   }
   return (
-    <div className={`${styles.navbar} ${shadow === true ? styles.drope_shadow : ""} flex items-center justify-between `} >
+    <div
+      className={`${styles.navbar} ${
+        shadow === true ? styles.drope_shadow : ""
+      } flex items-center justify-between `}
+    >
       <div className={`${styles.navbar_left} `}>
-        <NavLink to="/"> <h1 className={styles.logo}>Apna Helper</h1> </NavLink>
+        <NavLink to="/">
+          {" "}
+          <h1 className={styles.logo}>Apna Helper</h1>{" "}
+        </NavLink>
       </div>
 
-      <div className={`${styles.navbar_right} flex items-center justify-between `} >
+      <div
+        className={`${styles.navbar_right} flex items-center justify-between `}
+      >
         <div className="menu">
-          <NavLink to="#">Home</NavLink>
-          <NavLink to="#">About</NavLink>
-          <NavLink to="#">Contact</NavLink>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/about-us">About</NavLink>
+          <NavLink to="/contact-us">Contact</NavLink>
         </div>
 
         <div className={styles.auth}>
           <button className={`${styles.login} ${styles.navBtn}`}>Log In</button>
-          <button className={`${styles.signup} ${styles.navBtn}`}>Sign Up</button>
+          <NavLink to="/sign-up">
+            <button className={`${styles.signup} ${styles.navBtn}`}>
+              Sign Up
+            </button>
+          </NavLink>
         </div>
       </div>
     </div>
