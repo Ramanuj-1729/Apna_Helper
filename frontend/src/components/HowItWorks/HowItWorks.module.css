@@ -1,0 +1,16 @@
+.wrapper {
+    margin: 0 32px;
+box-shadow: 0px 4px 25px 15px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+}
+.arrow2{
+    transform: rotate(310deg);
+    width: 7rem;
+}
+.arrow1{
+    transform: rotate(-50deg);
+    width: 7rem;
+}
+.worker_image{
+    width:17rem;
+}

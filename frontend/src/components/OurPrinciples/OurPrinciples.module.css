@@ -6,3 +6,7 @@
 .left {
     flex: 50%;
 }
+.right img{
+    width: 70%;
+    /* height: 25%; */
+}

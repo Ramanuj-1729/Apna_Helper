@@ -45,6 +45,10 @@ a {
     text-decoration: none;
 }
 
+body{
+    background-color: #FEF7F7;
+}
+
 
 /* root  */
 :root{
