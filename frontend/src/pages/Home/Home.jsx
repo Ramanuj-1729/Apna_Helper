@@ -1,17 +1,21 @@
 import React from 'react';
 import Hero from '../../components/Hero/Hero'
-import How from '../../components/HowItWorks/How'
+import HowItWorks from '../../components/HowItWorks/HowItWorks';
+import OurPrinciples from "../../components/OurPrinciples/OurPrinciples";
 
 const Home = () => {
     return (
-        <>
-            <div>
-                <Hero />
-            </div>
-            <div>
-                <How/>
-            </div>
-        </>
+      <>
+        <div>
+          <Hero />
+        </div>
+        <div>
+          <OurPrinciples />
+        </div>
+        <div>
+          <HowItWorks />
+        </div>
+      </>
     );
 }
 

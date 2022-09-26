@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./How.module.css";
+import styles from "./OurPrinciples.module.css";
 
-const How = () => {
+const OurPrinciples = () => {
   return (
     <div className={`${styles.wrapper}`}>
       <h1>Our Principles</h1>
@@ -32,13 +32,13 @@ const How = () => {
           </span>
         </div>
 
-        <div className={styles.right}>
+        <div className={`${styles.right} flex direction-col`}>
           <img src="images/how1.png" alt="img" />
+          <img src="images/how2.png" alt="img" />
         </div>
-
       </div>
     </div>
   );
 };
 
-export default How;
+export default OurPrinciples;
