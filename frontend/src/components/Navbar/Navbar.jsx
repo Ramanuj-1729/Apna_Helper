@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import styles from "./Navbar.module.css";
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 
 const Navbar = () => {
+  const Navigation = useNavigate();
   const [shadow, setShadow] = useState(false);
 
   window.onscroll = function () {
@@ -14,11 +15,14 @@ const Navbar = () => {
       setShadow(false);
     }
   }
+
+  const signUpNavigation = () => {
+    Navigation('/sign-up');
+  }
   return (
     <div
-      className={`${styles.navbar} ${
-        shadow === true ? styles.drope_shadow : ""
-      } flex items-center justify-between `}
+      className={`${styles.navbar} ${shadow === true ? styles.drope_shadow : ""
+        } flex items-center justify-between `}
     >
       <div className={`${styles.navbar_left} `}>
         <NavLink to="/">
@@ -38,11 +42,11 @@ const Navbar = () => {
 
         <div className={styles.auth}>
           <button className={`${styles.login} ${styles.navBtn}`}>Log In</button>
-          <NavLink to="/sign-up">
-            <button className={`${styles.signup} ${styles.navBtn}`}>
-              Sign Up
-            </button>
-          </NavLink>
+          {/* <NavLink to="/sign-up"> */}
+          <button onClick={signUpNavigation} className={`${styles.signup} ${styles.navBtn}`}>
+            Sign Up
+          </button>
+          {/* </NavLink> */}
         </div>
       </div>
     </div>
