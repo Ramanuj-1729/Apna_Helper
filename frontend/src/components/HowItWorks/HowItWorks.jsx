@@ -5,6 +5,7 @@ const HowItWorks = () => {
   return (
     <>
       <div className={`${styles.wrapper}`}>
+
         <div className={`${styles.heading} flex justify-center items-center `}>
           <h1>How It Works ?</h1>
         </div>

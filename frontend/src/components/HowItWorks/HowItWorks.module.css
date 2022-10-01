@@ -3,6 +3,12 @@
     margin-bottom: 45px;
     color: white;
 }
+.back{
+    background-color: var(--footer-color);
+    height: 300px;
+    margin-top: 400px;
+    position: relative;
+}
 .heading h1{
 font-weight: 600;
 font-size: 40px;
@@ -14,6 +20,7 @@ font-size: 40px;
     margin: 20rem 2rem 2rem 3rem;
     width: 91%;
     padding: 3rem 3rem;
+        /* position: absolute; */
 }
 .middleImage{
     width: 1600px;

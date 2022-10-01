@@ -18,7 +18,9 @@ const Home = () => {
         <div className={style.background}></div>
         <OurPrinciples />
       </div>
-      <div>
+      <div className={style.How}>
+        <div className={style.background2}></div>
+
         <HowItWorks />
       </div>
       <div className={style.ourSatisfiedCustomer}>
