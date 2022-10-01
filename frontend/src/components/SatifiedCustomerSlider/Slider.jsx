@@ -1,7 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import style from "./Slider.module.css";
-import StarRating from "../StarRating/StarRating";
+import StarRating from "../shared/StarRating/StarRating";
 
 import "swiper/css";
 import "swiper/css/pagination";

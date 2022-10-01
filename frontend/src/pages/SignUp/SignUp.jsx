@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./SignUp.module.css";
-import Line from "../../components/Line/Line";
+import Line from "../../components/shared/Line/Line";
 const SignUp = () => {
   return (
     <div className={style.wrapper}>

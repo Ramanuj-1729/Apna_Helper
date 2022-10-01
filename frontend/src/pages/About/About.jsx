@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './About.module.css';
 import { useNavigate } from 'react-router-dom';
-import PrimaryButton from '../../components/PrimaryButton/PrimaryButton';
+import PrimaryButton from '../../components/shared/PrimaryButton/PrimaryButton';
 const About = () => {
 
     const Navigation = useNavigate();

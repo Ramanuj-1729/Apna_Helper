@@ -23,9 +23,8 @@ const Navbar = () => {
   };
   return (
     <div
-      className={`${styles.navbar} ${
-        shadow === true ? styles.drope_shadow : ""
-      } flex items-center justify-between `}
+      className={`${styles.navbar} ${shadow === true ? styles.drope_shadow : ""
+        } flex items-center justify-between `}
     >
       <div className={`${styles.navbar_left} `}>
         <NavLink to="/">
@@ -50,7 +49,7 @@ const Navbar = () => {
               boxShadow="0 0 10px rgba(0, 204, 153, 0.2)"
               fontSize="16px"
               color="#00FFCC"
-              border="1px solid var(--primary-color)"
+              border="1px solid #00ffcc"
             />
           </div>
           <PrimaryButton

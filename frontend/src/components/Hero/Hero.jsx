@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Hero.module.css";
-import PrimaryButton from "../PrimaryButton/PrimaryButton";
-import SecondaryButton from "../SecondaryButton/SecondaryButton";
+import PrimaryButton from "../shared/PrimaryButton/PrimaryButton";
+import SecondaryButton from "../shared/SecondaryButton/SecondaryButton";
 
 const Hero = () => {
   return (
