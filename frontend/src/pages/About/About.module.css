@@ -1,8 +1,10 @@
 .wrapper{
-    color: var(--font-color);
-    margin: 62px 120px;
+  
+}
+.upper{
+        color: var(--font-color);
+margin: 62px 120px;
     margin-bottom: 150px;
-
 }
 .left{
     margin-top:5rem ;
@@ -37,4 +39,25 @@
 .right{
     flex: 50%;
     /* padding-right: 120px; */
+}
+.moreabout h1{
+    color: var(--font-color);
+    font-weight: 600;
+    font-size: 48px;
+
+}
+.moreabout h4{
+    color: var(--font-color);
+    font-weight: 550;
+            font-size: 20px;
+                line-height: 32px;
+                margin-bottom: 3rem;
+                margin-top: 3rem;
+}
+.moreabout p{
+            font-size: 20px;
+                line-height: 32px;
+                font-weight: 500;
+                color: var(--font-color);
+                margin: 1rem 6rem;
 }
