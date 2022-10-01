@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "./Hero.module.css";
+import PrimaryButton from "../PrimaryButton/PrimaryButton";
+import SecondaryButton from "../SecondaryButton/SecondaryButton";
 
 const Hero = () => {
   return (
@@ -10,9 +12,29 @@ const Hero = () => {
         <div className={`${styles.left}`}>
           <h1 className={styles.firstLine}>Help At</h1>
           <h1 className={styles.secondLine}>Your Doorstep</h1>
-          <div>
-            <button className={styles.top_button}>Post your job</button>
-            <button className={styles.bottom_button}>Become a helper</button>
+          <p>
+            Apna helper is an online platform which fulfills customer’s request
+            by connecting with the ideal helper according to thier needs. Save
+            your every minute and let us do your work!!
+          </p>
+          <div className="flex">
+            <div className={styles.left_button}>
+              <SecondaryButton
+                content="Become a helper"
+                color="#00FFCC"
+                border="1px solid #00FFCC"
+                boxShadow="0px 5px 10px 1px rgba(0, 255, 204, 0.2)"
+                padding="5px 30px"
+              />
+            </div>
+            <div className={styles.right_button}>
+              <PrimaryButton
+                backgroundColor="#00FFCC"
+                content="Create a job"
+                padding="5px 55px"
+                boxShadow="0px 5px 10px 1px rgba(0, 255, 204, 0.2)"
+              />
+            </div>
           </div>
         </div>
         <div className={styles.right}>
