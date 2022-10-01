@@ -1,7 +1,7 @@
 @import url('../../index.css');
 
 .navbar {
-    background-color: var(--white-color);
+    background-color: var(--body-color);
     padding: 6px 80px;
     position: sticky;
     top: 0px;
@@ -13,8 +13,8 @@
 }
 
 .navbar_left .logo {
-    font-size: 32px;
-    color: var(--green-color);
+    font-size: 40px;
+    color: var(--primary-color);
     font-weight: 700;
 }
 
@@ -27,10 +27,11 @@
 }
 
 .navbar_right a:hover,
-.navbar_right a:focus {
-    border-bottom: 2px solid var(--green-color);
-    font-weight: 500;
-    color: var(--green-color);
+.navbar_right a:focus,
+.active {
+    border-bottom: 2px solid var(--primary-color);
+    font-weight: 500 !important;
+    color: var(--primary-color) !important;
 }
 
 .auth {
@@ -67,4 +68,9 @@
 .auth .signup {
     color: var(--white-color);
     background-color: var(--green-color);
+}
+
+.leftButton {
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
