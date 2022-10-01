@@ -23,6 +23,10 @@
     flex-direction: column;
 }
 
+.direction-row {
+    flex-direction: row;
+}
+
 
 /* grid */
 .grid {

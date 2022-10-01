@@ -46,16 +46,16 @@ a {
 }
 
 body {
-    background-color: #F7F7F7;
-}
+    background-color: var(--body-color);}
 
 
 /* root  */
 :root {
     --white-color: #fff;
-    --footer-color: #161E2C;
-    --green-color: #00cc99;
-    --font-color: #000000;
-    --gray-color: #37474F;
-    --body-color: #F7F7F7;
+    --footer-color: #12232e;
+    --primary-color: #00FFCC;
+    --secondary-color:#425e5e;
+    --font-color: #203647;
+    --gray-color: #c2c2d6;
+    --body-color: #FFF9C0;
 }

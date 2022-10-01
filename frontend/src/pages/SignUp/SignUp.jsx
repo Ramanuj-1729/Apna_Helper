@@ -12,46 +12,46 @@ const SignUp = () => {
           Sign up with google
         </button>
 
-        <div className={`${style.line}flex items-center justify-center`}>
+        <div className={`${style.line}flex items-center justify-center direction-row`}>
           <Line width="50%" height="1px" />
           or sign up with email
           <Line width="50%" height="1px" />
-          <form className={`${style.form} flex direction-col`} action="">
-            <span>First Name*</span>
-            <input
-              id="place"
-              className=""
-              type="text"
-              name=" First Name"
-              placeholder="First Name"
-            />
-            <span>Last Name*</span>
-            <input
-              id="place"
-              className=""
-              type="text"
-              name=" Last Name"
-              placeholder="Last Name"
-            />
-            <span>Email*</span>
-            <input
-              id="place"
-              className=" "
-              type="Email"
-              name="Email"
-              placeholder="email"
-            />
-            <span>Password*</span>
-            <input
-              id="place"
-              className=""
-              type="password"
-              name=" password"
-              placeholder="Password"
-            />
-            <button className={style.submit}>Finish Now</button>
-          </form>
         </div>
+        <form className={`${style.form} flex direction-col`} action="">
+          <span>First Name*</span>
+          <input
+            id="place"
+            className=""
+            type="text"
+            name=" First Name"
+            placeholder="First Name"
+          />
+          <span>Last Name*</span>
+          <input
+            id="place"
+            className=""
+            type="text"
+            name=" Last Name"
+            placeholder="Last Name"
+          />
+          <span>Email*</span>
+          <input
+            id="place"
+            className=" "
+            type="Email"
+            name="Email"
+            placeholder="email"
+          />
+          <span>Password*</span>
+          <input
+            id="place"
+            className=""
+            type="password"
+            name=" password"
+            placeholder="Password"
+          />
+          <button className={style.submit}>Finish Now</button>
+        </form>
       </div>
     </div>
   );

@@ -1,1 +1,29 @@
-/* css yaha likho  */
+.card img {
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+}
+
+.card {
+    background-color: var(--secondary-color);
+    padding: 1.5rem 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+}
+
+
+.cardRight {
+    margin-left: 1rem;
+}
+
+.cardRight h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+.cardRight p {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}

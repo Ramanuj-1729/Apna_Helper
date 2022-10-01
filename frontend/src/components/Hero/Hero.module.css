@@ -1,5 +1,5 @@
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.1)), url('/public/images/hero-img.png');
+    /* background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.1)), url('/public/images/hero-img.png'); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -8,28 +8,67 @@
 }
 
 .hero_content {
-    padding-top: 5rem;
+    /* padding-top: 5rem; */
+    margin: 120px 150px 0px 150px;
+
 }
 
-.logo {
+.left {
+    flex: 50%;
+}
+
+.right {
+    flex: 50%;
+}
+.right img{
+        width: 500px;
+        height: 500px;
+        /* border-radius: 0%; */
+}
+.firstLine {
+    color: rgba(32, 54, 71, 0.75);
+    font-weight: 700;
+    font-size: 64px;
+    letter-spacing: 0.06em;
+    line-height: 1.3;
+}
+
+.secondLine {
+    color: var(--font-color);
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.3;
+    letter-spacing: 0.06em;
+    margin-bottom: 1rem;
+
+}
+
+.bottom_button {
     color: white;
-    font-size: 96px;
-    font-weight: 600;
-    text-shadow: 0px 11px 10px rgba(81,67,21,0.8);
-}
-
-.button button {
-    color: #06BCFB;
     border-radius: 25px;
     font-size: 20px;
     font-weight: 500;
     padding: 5px 20px;
-    border: 1px solid #06BCFB;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
     outline: none;
     margin-top: 1.5rem;
-    box-shadow: 1px 2px grey;
+    /* box-shadow: 1px 2px grey; */
+    box-shadow: 0px 5px 10px 1px rgba(33, 223, 227, 0.2);
 }
 
-.button button:last-child {
-    margin-left: 7rem;
+.top_button {
+
+    color: #00FFCC;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 20px;
+    border: 1px solid #00FFCC;
+    outline: none;
+    margin-top: 1.5rem;
+    /* box-shadow: 1px 2px grey; */
+    background-color: white;
+    box-shadow: 0px 5px 10px 1px rgba(33, 223, 227, 0.2);
+    margin-right: 2rem;
 }

@@ -1,0 +1,20 @@
+.addColor {
+    color: #ffc107;
+}
+
+.removeColor {
+    color: #e4e5e9;
+}
+
+button{
+    background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: none;
+}
+i{
+    margin-right: 5px;
+}
