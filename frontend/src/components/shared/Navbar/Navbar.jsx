@@ -21,6 +21,9 @@ const Navbar = () => {
   const signUpNavigation = () => {
     Navigation("/sign-up");
   };
+  const loginNavigation = () => {
+    Navigation("/login");
+  };
   return (
     <div
       className={`${styles.navbar} ${shadow === true ? styles.drope_shadow : ""
@@ -50,6 +53,7 @@ const Navbar = () => {
               fontSize="16px"
               color="#00FFCC"
               border="1px solid #00ffcc"
+              onClick={loginNavigation}
             />
           </div>
           <PrimaryButton
@@ -58,6 +62,7 @@ const Navbar = () => {
             backgroundColor="var(--primary-color)"
             boxShadow="0 0 10px rgba(0, 204, 153, 0.2)"
             fontSize="16px"
+            onClick={signUpNavigation}
           />
         </div>
       </div>
