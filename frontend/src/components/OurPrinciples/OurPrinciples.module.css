@@ -18,7 +18,7 @@
     line-height: 52px;
 }
 
-h3 {
+.left h3 {
     margin-left: 3rem;
     font-weight: 700;
     font-size: 28px;
@@ -26,7 +26,7 @@ h3 {
     margin-top: -50px;
 }
 
-h4 {
+.left h4 {
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
@@ -37,7 +37,7 @@ h4 {
     margin-left: 3rem;
 }
 
-p {
+.left p {
     font-weight: 600;
     font-size: 20px;
 }

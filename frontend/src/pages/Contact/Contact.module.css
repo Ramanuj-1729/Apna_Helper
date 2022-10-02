@@ -1,7 +1,17 @@
-.form{
-    padding-top: 10rem;
-}
-
 .wrapper {
     width: 100%;
+}
+
+.left{
+    flex: 50%;
+}
+.right{
+    flex: 50%;
+}
+.formWrapper{
+    background-color: var(--gray-color);
+    width: 60%;
+}
+.form{
+    margin: 5rem 3rem;
 }

@@ -6,7 +6,7 @@
     color: #e4e5e9;
 }
 
-button{
+.starRating button{
     background: none;
         color: inherit;
         border: none;
@@ -15,6 +15,6 @@ button{
         cursor: pointer;
         outline: none;
 }
-i{
+.starRating i{
     margin-right: 5px;
 }

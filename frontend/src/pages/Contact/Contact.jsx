@@ -1,63 +1,61 @@
 import React from "react";
+import SecondaryButton from "../../components/shared/SecondaryButton/SecondaryButton";
 import style from './Contact.module.css';
 
 const Contact = () => {
   return (
     <div className={style.wrapper}>
-      <div className="flex items-center justify-center">
-        <h1>Contact Us</h1>
-      </div>
-      <h3 className="flex items-center justify-center">
-        Any questions or remarks ? Just write us a message
-      </h3>
-
       <div className="flex">
-        <div>
-          <img src="images/Contact-img-1.png" alt="" />
+        <div className={style.left}>
+          <img src="images/contact-img-5.png" alt="" />
         </div>
-        <div className={style.form}>
-          <form action="">
-            <div className="">
-              <div className="suryansh abhi contact us mai chanes kr rha hai mai registeration">
-                <span className="">{/* <i className=""></i> */}</span>
-                <input
-                  className=""
-                  type="text"
-                  name="name"
-                  placeholder="Name"
-                />
+        <div className={style.right}>
+          <div className={`${style.formWrapper}  `}>
+            <h1>Contact Us</h1>
+            <h3>Got any query for us ? Let us know...</h3>
+            <form action="">
+              <div className="">
+                <div className="suryansh abhi contact us mai chanes kr rha hai mai registeration">
+                  <input
+                    className=""
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                  />
+                </div>
+                <div className="">
+                  
+                  <input
+                    className=""
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                  />
+                </div>
+                <div className="">
+                  <span className="">
+                  </span>
+                  <textarea
+                    className=""
+                    name="message"
+                    cols="40"
+                    rows="6"
+                    placeholder="Message"
+                  >
+                  </textarea>
+                </div>
               </div>
               <div className="">
-                <span className="">
-                  <i className=""></i>
-                </span>
-                <input
-                  className=""
-                  type="email"
-                  name="email"
-                  placeholder="Email"
+                <SecondaryButton
+                  content="send message"
+                  padding="6px 30px"
+                  color="#263238"
+                  border="1px solid #263238"
+                  borderRadius="10px"
                 />
               </div>
-              <div className="">
-                <span className="">
-                  <i className="fa-solid fa-comments"></i>
-                </span>
-                <textarea
-                //   ref="images/contact-img-2.png"    ye wli dalni hia asati
-                  className=""
-                  name="message"
-                  cols="40"
-                  rows="6"
-                  placeholder="Message"
-                >
-                  {/* <img src="images/contact-img-2.png" alt="" /> */}
-                </textarea>
-              </div>
-            </div>
-            <div className="">
-              {/* <PrimaryButton width="44" height="12" buttonName="Send Message" /> */}
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
     </div>
