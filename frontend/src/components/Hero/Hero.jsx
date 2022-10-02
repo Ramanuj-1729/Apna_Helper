@@ -24,15 +24,16 @@ const Hero = () => {
                 color="#00FFCC"
                 border="1px solid #00FFCC"
                 boxShadow="0px 5px 10px 1px rgba(0, 255, 204, 0.2)"
-                padding="5px 30px"
+                padding="8px 32px"
               />
             </div>
             <div className={styles.right_button}>
               <PrimaryButton
                 backgroundColor="#00FFCC"
                 content="Create a job"
-                padding="5px 55px"
+                padding="8px 55px"
                 boxShadow="0px 5px 10px 1px rgba(0, 255, 204, 0.2)"
+                border="1px solid var(--primary-color)"
               />
             </div>
           </div>

@@ -63,6 +63,7 @@ const Navbar = () => {
             boxShadow="0 0 10px rgba(0, 204, 153, 0.2)"
             fontSize="16px"
             onClick={signUpNavigation}
+            border="1px solid var(--primary-color)"
           />
         </div>
       </div>

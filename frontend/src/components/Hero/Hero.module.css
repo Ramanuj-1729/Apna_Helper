@@ -1,16 +1,12 @@
 .hero {
-    /* background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.1)), url('/public/images/hero-img.png'); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
-    /* height: calc(100vh - 65px); */
 }
 
 .hero_content {
-    /* padding-top: 5rem; */
-    margin: 120px 150px 0px 150px;
-
+    margin: 120px 120px 0px 120px;
 }
 
 .left {
@@ -20,11 +16,14 @@
 .right {
     flex: 50%;
 }
-.right img{
-        width: 500px;
-        height: 500px;
-        /* border-radius: 0%; */
+
+.right img {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    float: right;
 }
+
 .firstLine {
     color: rgba(32, 54, 71, 0.75);
     font-weight: 700;
@@ -46,7 +45,8 @@
 .left_button {
     margin-right: 2rem;
 }
-.left p{
+
+.left p {
     color: var(--font-color);
     font-weight: 500;
     padding-right: 25px;

@@ -1,63 +1,73 @@
-.wrapper{
-  
-}
-.upper{
-        color: var(--font-color);
-margin: 62px 120px;
+.upper {
+    color: var(--font-color);
+    margin: 62px 120px;
     margin-bottom: 150px;
 }
-.left{
-    margin-top:5rem ;
+
+.left {
+    margin-top: 5rem;
     flex: 50%;
-}
-.left button{
-    color: white;
-        border-radius: 25px;
-        font-size: 20px;
-        font-weight: 500;
-        padding: 20px 20px;
-        background-color: var(--secondary-color);
-        border: 1px solid var(--secondary-color);
-        outline: none;
-        margin-top: 1.5rem;
-        /* box-shadow: 1px 2px grey; */
-        box-shadow: 0px 5px 10px 1px rgba(66, 94, 94, 0.2);
 }
 
-.left h1{
-    font-weight: 550;
-        font-size: 64px;
-        line-height: 77px;
-        /* margin-bottom: 1rem; */
-}
-.left p{
+.left button {
+    color: white;
+    border-radius: 25px;
+    font-size: 20px;
     font-weight: 500;
-        font-size: 20px;
-        line-height: 32px;
-        margin-top: 3rem;
+    padding: 20px 20px;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    outline: none;
+    margin-top: 1.5rem;
+    box-shadow: 0px 5px 10px 1px rgba(66, 94, 94, 0.2);
 }
-.right{
+
+.left h1 {
+    font-weight: 550;
+    font-size: 64px;
+    line-height: 77px;
+}
+
+.left p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    margin-top: 3rem;
+}
+
+.right {
     flex: 50%;
-    /* padding-right: 120px; */
 }
-.moreabout h1{
+
+.right img {
+    position: relative;
+    float: right;
+}
+
+.moreabout h1 {
     color: var(--font-color);
     font-weight: 600;
     font-size: 48px;
-
+    margin-top: 3rem;
 }
-.moreabout h4{
+
+.moreabout h4 {
     color: var(--font-color);
     font-weight: 550;
-            font-size: 20px;
-                line-height: 32px;
-                margin-bottom: 3rem;
-                margin-top: 3rem;
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
 }
-.moreabout p{
-            font-size: 20px;
-                line-height: 32px;
-                font-weight: 500;
-                color: var(--font-color);
-                margin: 1rem 6rem;
+
+.moreabout p {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 500;
+    color: var(--font-color);
+    margin: 1rem 6rem;
+}
+
+.moreabout .niceDay {
+    margin-bottom: 9rem;
 }
