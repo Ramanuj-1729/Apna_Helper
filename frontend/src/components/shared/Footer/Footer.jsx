@@ -14,7 +14,7 @@ const Footer = () => {
                             <NavLink to='#' className={styles.navlink} ><li>Become a helper</li></NavLink>
                             <NavLink to='#' className={styles.navlink} ><li>Post a job</li></NavLink>
                             <NavLink to='#' className={styles.navlink} ><li>Blog</li></NavLink>
-                            <NavLink to='#' className={styles.navlink} ><li>Team Diary</li></NavLink>
+                            <NavLink to='team-diary' className={styles.navlink} ><li>Team Diary</li></NavLink>
                         </ul>
                     </div>
 
