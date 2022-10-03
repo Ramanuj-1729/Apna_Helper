@@ -10,12 +10,15 @@ const Contact = () => {
           <img src="images/contact-img-5.png" alt="" />
         </div>
         <div className={style.right}>
-          <div className={`${style.formWrapper}  `}>
+          <div
+            className={`${style.formWrapper} flex items-center justify-center direction-col `}
+          >
             <h1>Contact Us</h1>
             <h3>Got any query for us ? Let us know...</h3>
             <form action="">
               <div className="">
-                <div className="suryansh abhi contact us mai chanes kr rha hai mai registeration">
+                <div className="">
+                  {/* <i class="fa-solid fa-user"></i> */}
                   <input
                     className=""
                     type="text"
@@ -24,7 +27,6 @@ const Contact = () => {
                   />
                 </div>
                 <div className="">
-                  
                   <input
                     className=""
                     type="email"
@@ -33,16 +35,14 @@ const Contact = () => {
                   />
                 </div>
                 <div className="">
-                  <span className="">
-                  </span>
+                  <span className=""></span>
                   <textarea
                     className=""
                     name="message"
                     cols="40"
                     rows="6"
                     placeholder="Message"
-                  >
-                  </textarea>
+                  ></textarea>
                 </div>
               </div>
               <div className="">
