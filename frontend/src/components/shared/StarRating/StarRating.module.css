@@ -6,15 +6,10 @@
     color: #e4e5e9;
 }
 
-.starRating button{
-    background: none;
-        color: inherit;
-        border: none;
-        padding: 0;
-        font: inherit;
-        cursor: pointer;
-        outline: none;
+.starRating span {
+    cursor: pointer;
 }
-.starRating i{
+
+.starRating i {
     margin-right: 5px;
 }

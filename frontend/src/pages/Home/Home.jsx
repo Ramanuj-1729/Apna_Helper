@@ -4,6 +4,7 @@ import HowItWorks from "../../components/HowItWorks/HowItWorks";
 import OurPrinciples from "../../components/OurPrinciples/OurPrinciples";
 import Slider from "../../components/SatifiedCustomerSlider/Slider";
 import style from "./Home.module.css";
+import sliderData from '../../components/satisfiedCustomer';
 
 const Home = () => {
   return (
@@ -27,7 +28,7 @@ const Home = () => {
         <h2 className="justify-center items-center flex">
           Our Customer Reviews
         </h2>
-        <Slider />
+        <Slider sliderData={sliderData} />
       </div>
     </>
   );

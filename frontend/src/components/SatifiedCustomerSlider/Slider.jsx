@@ -1,17 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import style from "./Slider.module.css";
-import StarRating from "../shared/StarRating/StarRating";
-
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper";
 
-const Slider = () => {
+const Slider = ({ sliderData }) => {
+  const [sliders, setSliders] = useState(sliderData);
+
   return (
     <>
-      <Swiper
+      <Swiper 
+        style={{"--swiper-navigation-size": "30px", "--swiper-pagination-color": "#FFF"}}
         slidesPerView={3}
         spaceBetween={30}
         slidesPerGroup={1}
@@ -23,29 +24,27 @@ const Slider = () => {
         navigation={true}
         modules={[Pagination, Navigation]}
       >
-        {[...Array(4)].map((star, index) => {
-          index += 1;
-          return (
-            <div className="slider">
-              <SwiperSlide>
-                <div
-                  className={`${style.card} flex justify-center items-center`}
-                >
-                  <img src="images/review-1.png" alt="" />
-                  <div className={style.cardRight}>
-                    <StarRating />
-
-                    <h3>SURYANSH ASSATI</h3>
-                    <p>
-                      Awesome service , helper came to my house and helped me in
-                      my shifting to another ...
-                    </p>
+        {
+          sliders.map((slider) => (
+            <SwiperSlide key={slider.userId}>
+              <div className={`${style.card} flex justify-center items-center`} >
+                <img src={slider.customer_img} alt="img" />
+                <div className={style.cardRight}>
+                  <div className={style.rating}>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                   </div>
+                  <h3>{slider.customer_name}</h3>
+                  <p>
+                    {slider.customer_comment}
+                  </p>
                 </div>
-              </SwiperSlide>
-            </div>
-          );
-        })}
+              </div>
+            </SwiperSlide>
+          ))}
       </Swiper>
     </>
   );

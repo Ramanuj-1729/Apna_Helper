@@ -10,12 +10,9 @@ const StarRating = () => {
       {[...Array(5)].map((star, index) => {
         index += 1;
         return (
-          <button
-            type="button"
-            key={index}
-            className={`${
-              index <= (hover || rating) ? styles.addColor : styles.removeColor
-            }`}
+          <span key={index}
+            className={`${index <= (hover || rating) ? styles.addColor : styles.removeColor
+              }`}
             onClick={() => setRating(index)}
             onMouseEnter={() => setHover(index)}
             onMouseLeave={() => setHover(rating)}
@@ -24,8 +21,8 @@ const StarRating = () => {
               setHover(0);
             }}
           >
-            <i className="fa-solid fa-star"></i>
-          </button>
+            <i class="fa-solid fa-star"></i>
+          </span>
         );
       })}
     </div>

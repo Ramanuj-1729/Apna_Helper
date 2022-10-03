@@ -11,6 +11,9 @@
     border-radius: 10px;
 }
 
+.rating i {
+    margin-right: 5px;
+}
 
 .cardRight {
     margin-left: 1rem;
