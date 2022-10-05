@@ -1,7 +1,10 @@
+.wrapper{
+    color: var(--font-color);
+}
+
 .heading{
     /* margin-top: 320px; */
     margin-bottom: 45px;
-    color: white;
 }
 .back{
     background-color: var(--footer-color);
@@ -33,11 +36,9 @@ font-size: 40px;
 }
 .para1{
     margin-right: 50px;
-    color: white;
 }
 .para2{
     margin-right: 50px;
-    color: white;
 }
 
 .heading2{
@@ -51,7 +52,6 @@ font-size: 40px;
 }
 .para3{
     margin-left: 50px;
-    color: white;
 }
 .heading4{
     margin-top: 130px;
@@ -60,5 +60,4 @@ font-size: 40px;
 }
 .para4{
         margin-left: 50px;
-            color: white;
 }

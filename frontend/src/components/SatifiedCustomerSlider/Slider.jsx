@@ -10,7 +10,7 @@ const Slider = ({ sliderData }) => {
   const [sliders, setSliders] = useState(sliderData);
 
   return (
-    <>
+    <div className={style.wrapper}>
       <Swiper 
         style={{"--swiper-navigation-size": "30px", "--swiper-pagination-color": "#FFF"}}
         slidesPerView={3}
@@ -46,7 +46,7 @@ const Slider = ({ sliderData }) => {
             </SwiperSlide>
           ))}
       </Swiper>
-    </>
+    </div>
   );
 };
 

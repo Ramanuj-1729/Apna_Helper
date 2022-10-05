@@ -1,3 +1,7 @@
+.wrapper{
+    color: var(--font-color);
+}
+
 .card img {
     width: 30%;
     height: 30%;
