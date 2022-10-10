@@ -1,0 +1,17 @@
+.form_wrapper {
+    background: #fff;
+    border-radius: 10px;
+    padding: 56px 48px;
+    box-shadow: 0px 4px 25px 10px rgba(0, 0, 0, 0.07);
+}
+
+.form_wrapper h2 {
+    font-size: 34px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.form_wrapper h5 {
+    font-size: 16px;
+    font-weight: 400;
+}

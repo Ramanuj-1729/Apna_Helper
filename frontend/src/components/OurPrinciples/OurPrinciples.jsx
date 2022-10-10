@@ -3,7 +3,7 @@ import styles from "./OurPrinciples.module.css";
 
 const OurPrinciples = () => {
   return (
-    <>
+    <> 
       <div
         className={`${styles.wrapper}  flex justify-center items-center direction-col`}
       >

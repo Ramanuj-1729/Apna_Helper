@@ -52,3 +52,9 @@
     padding-right: 25px;
     padding-bottom: 2rem;
 }
+
+@media (min-width:800px) and (max-width:1200px){
+.hero_content {
+        margin: 80px 120px 0px 80px;
+    }
+}

@@ -24,6 +24,7 @@ const Navbar = () => {
   const loginNavigation = () => {
     Navigation("/login");
   };
+  
   return (
     <div
       className={`${styles.navbar} ${shadow === true ? styles.drope_shadow : ""

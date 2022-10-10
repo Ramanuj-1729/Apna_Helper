@@ -3,7 +3,7 @@ import styles from "./HowItWorks.module.css";
 
 const HowItWorks = () => {
   return (
-    <>
+    <> 
       <div className={`${styles.wrapper}`}>
 
         <div className={`${styles.heading} flex justify-center items-center `}>

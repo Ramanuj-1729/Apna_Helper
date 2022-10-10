@@ -74,3 +74,10 @@
     margin-left: 2rem;
     margin-right: 2rem;
 }
+
+@media (min-width:800px) and (max-width:1200px)
+{
+    .navbar{
+        padding: 6px 80px;
+    }
+}

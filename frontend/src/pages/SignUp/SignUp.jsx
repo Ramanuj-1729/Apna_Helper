@@ -1,59 +1,94 @@
 import React from "react";
-import style from "./SignUp.module.css";
+import styles from "./SignUp.module.css";
 import Line from "../../components/shared/Line/Line";
+import PrimaryButton from "../../components/shared/PrimaryButton/PrimaryButton";
+import Form from "../../components/Form/Form";
 const SignUp = () => {
   return (
-    <div className={style.wrapper}>
-      <div className={`${style.box} flex direction-col `}>
-        <h3>Registeration</h3>
-        <span>fill the form to get yourself registered...</span>
-        <button className={`flex items-center justify-center ${style.google}`}>
-          <img src="images/google-logo.png" alt="" />
-          Sign up with google
-        </button>
+    <>
+      <div className="flex items-center justify-center">
+        <Form>
+          <div
+            className={`${styles.ga_button} flex items-center justify-center`}
+          >
+            <button className="flex items-center justify-center">
+              <img src="images/google-logo.png" alt="" />
+              <span>Sign up with Google</span>
+            </button>
+            <div className={styles.darkButton}>
+              <button className=" flex items-center justify-center">
+                <img src="images/apple-logo.png" alt="" />
+                <span>Sign up with Apple</span>
+              </button>
+            </div>
+          </div>
+          <div className="flex">
+            <div className={styles.line1}>
+              <Line width="80px" height="1px" backgroundColor="#C2C2D6" />
+            </div>
+            <span> or sign up with </span>
 
-        <div className={`${style.line}flex items-center justify-center direction-row`}>
-          <Line width="50%" height="1px" />
-          or sign up with email
-          <Line width="50%" height="1px" />
-        </div>
-        <form className={`${style.form} flex direction-col`} action="">
-          <span>First Name*</span>
-          <input
-            id="place"
-            className=""
-            type="text"
-            name=" First Name"
-            placeholder="First Name"
-          />
-          <span>Last Name*</span>
-          <input
-            id="place"
-            className=""
-            type="text"
-            name=" Last Name"
-            placeholder="Last Name"
-          />
-          <span>Email*</span>
-          <input
-            id="place"
-            className=" "
-            type="Email"
-            name="Email"
-            placeholder="email"
-          />
-          <span>Password*</span>
-          <input
-            id="place"
-            className=""
-            type="password"
-            name=" password"
-            placeholder="Password"
-          />
-          <button className={style.submit}>Finish Now</button>
-        </form>
+            <div className={styles.line2}>
+              <Line width="80px" height="1px" />
+            </div>
+          </div>
+
+          <div className={`${styles.fill} flex direction-col`}>
+            <div className="flex">
+              <input
+                id="place"
+                type="text"
+                className={styles.fname}
+                name=" First Name"
+                placeholder="First Name"
+              />
+              <input
+                id="place"
+                className={styles.lname}
+                type="text"
+                name=" Last Name"
+                placeholder="Last Name"
+              />
+            </div>
+            <input
+              id="place"
+              type="Email"
+              name="Email Address"
+              placeholder="email"
+            />
+            <input
+              id="place"
+              type="password"
+              name="create password"
+              placeholder="create Password"
+            />
+            <input
+              id="place"
+              type="password"
+              name="confirm password"
+              placeholder="confirm Password"
+            />
+          </div>
+          <div className={styles.line3}>
+            <Line width="580px" height="1px" />
+          </div>
+
+          <div className={`${styles.signButton} flex`}>
+            <PrimaryButton
+              content="Sign Up"
+              backgroundColor="#00FFCC"
+              padding="4px 252px"
+              boxShadow="0px 8px 25px 2px rgba(0, 255, 204, 0.25)"
+            />
+          </div>
+
+          <div className={styles.bottomButton}>
+            <span>already have an account ? </span>
+            <button>sign in here</button>
+          </div>
+        </Form>
       </div>
-    </div>
+    </>
   );
 };
 
