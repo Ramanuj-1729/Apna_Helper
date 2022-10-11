@@ -12,13 +12,9 @@ const About = () => {
   return (
     <>
       <div className={`${style.wrapper}  `}>
-        <div
-          className={`${style.upper}  ${display === true ? "flex" : "hidden"
-            }  `}
-        >
+        <div className={`${style.upper}  ${display === true ? "flex" : "hidden"} items-center justify-center`} >
           <div className={style.left}>
-            <h1>About</h1>
-            <h1>Apna Helper !</h1>
+            <h1>About <br /> Apna Helper !</h1>
             <p>
               Apna Helper is a Worldwide employement company which helps
               people in posting and finding jobs near them. Here at Apna
@@ -28,7 +24,7 @@ const About = () => {
             <PrimaryButton
               backgroundColor="#425E5E"
               content="Read More"
-              padding="5px 55px"
+              padding="8px 64px"
               boxShadow="0px 5px 10px 1px rgba(66, 94, 94, 0.2)"
               onClick={changeDisplay}
             />
@@ -39,10 +35,7 @@ const About = () => {
         </div>
 
         <div
-          className={`${style.moreabout
-            } flex items-center justify-center direction-col ${display === false ? "flex" : "hidden"
-            }`}
-        >
+          className={`${style.moreabout} flex items-center justify-center direction-col ${display === false ? "flex" : "hidden"}`}>
           <h1>About Apna Helper !!!</h1>
           <h4>Welcome To Apna Helper</h4>
           <p>
@@ -54,14 +47,11 @@ const About = () => {
             website. We hope you enjoy our blog as much as we enjoy offering
             them to you. I will keep posting more important posts on my
             Website for all of you. Please give your support and love. Thanks
-            For Visiting Our site.
-          </p>
-          <p>
-            I will keep posting more important posts on my Web site for all of
+            For Visiting Our site. <br /><br />I will keep posting more important posts on my Web site for all of
             you. Please give your support and love.lhkjhjhjh hjjvhjvhhvj
             hvjvhvhjvvh jjvvhvhjvgjvgvggvgj
           </p>
-          <h4 className={style.niceDay}>Have a nice day</h4>
+          <h5 className={style.niceDay}>Have a nice day !</h5>
         </div>
       </div>
     </>

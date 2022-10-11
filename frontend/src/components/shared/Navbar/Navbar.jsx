@@ -24,7 +24,7 @@ const Navbar = () => {
   const loginNavigation = () => {
     Navigation("/log-in");
   };
-  
+
   return (
     <div
       className={`${styles.navbar} ${shadow === true ? styles.drope_shadow : ""
@@ -48,10 +48,9 @@ const Navbar = () => {
         <div className={`${styles.auth} flex items-center justify-center `}>
           <div className={styles.leftButton}>
             <SecondaryButton
-              content="Log In"
-              padding="6px 38px"
+              content="Sign In"
+              padding="5px 32px"
               boxShadow="0 0 10px rgba(0, 204, 153, 0.2)"
-              fontSize="16px"
               color="#00FFCC"
               border="1px solid #00ffcc"
               onClick={loginNavigation}
@@ -59,10 +58,9 @@ const Navbar = () => {
           </div>
           <PrimaryButton
             content="Sign Up"
-            padding="6px 32px"
+            padding="5px 32px"
             backgroundColor="var(--primary-color)"
             boxShadow="0 0 10px rgba(0, 204, 153, 0.2)"
-            fontSize="16px"
             onClick={signUpNavigation}
             border="1px solid var(--primary-color)"
           />
