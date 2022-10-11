@@ -22,7 +22,7 @@ const Navbar = () => {
     Navigation("/sign-up");
   };
   const loginNavigation = () => {
-    Navigation("/login");
+    Navigation("/log-in");
   };
   
   return (

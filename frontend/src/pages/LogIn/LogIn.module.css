@@ -1,9 +1,11 @@
 .sign_up {
-    /* display: inline-block; */
+    display: inline-block;
 }
-.ga_button{
+
+.ga_button {
     margin: 24px 0px;
 }
+
 .ga_button button {
     background: none;
     font-size: 16px;
@@ -13,27 +15,32 @@
     border-radius: 10px;
     padding: 8px 32px;
 }
-.darkButton button{
+
+.darkButton button {
     background-color: var(--font-color);
     color: white;
 }
+
 .ga_button button:first-child {
     margin-right: 32px;
 }
 
 .ga_button button img {
     margin-right: 16px;
-    height: 30px; 
+    height: 30px;
 }
-.signButton{
+
+.signButton {
     margin: 30px 0px;
 }
-.bottomButton button{
+
+.bottomButton button {
     color: var(--primary-color);
     font-size: 16px;
     background: none;
     border: none;
 }
+
 .line1 {
     margin-top: 12px;
     margin-bottom: 18px;
@@ -47,24 +54,31 @@
     margin-left: 10px;
     color: var(--gray-color);
 }
+
 .line3 {
     margin-bottom: 20px;
 }
-.lname , .fname{
+
+.lname,
+.fname {
     flex: 50%;
 }
-.fill{
+
+.fill {
     margin: 10px 0px;
 }
-.fill input{
+
+.fill input {
     border-color: var(--gray-color);
     border-radius: 10px;
     padding: 10px 4px;
-    margin: 10px 0px    ;
+    margin: 10px 0px;
 }
-.fill div input:first-child{
-    margin-right:25px ;
+
+.fill div input:first-child {
+    margin-right: 25px;
 }
+
 /* .box {
     background-color: white;
     border-radius: 10px;

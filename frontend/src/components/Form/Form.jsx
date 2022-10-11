@@ -1,13 +1,13 @@
 import React from "react";
 import style from "./Form.module.css";
 
-const Form = ({children}) => {
+const Form = ({children,heading,text}) => {
   return (
     <>
       <div className={`${style.form_wrapper}`}>
         <form action="">
-          <h2>Sign Up</h2>
-          <h5>Please fill the details and create account</h5>
+          <h2>{heading}</h2>
+          <h5>{text}</h5>
           {children}
         </form>
       </div>

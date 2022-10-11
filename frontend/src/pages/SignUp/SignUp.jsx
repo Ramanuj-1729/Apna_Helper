@@ -7,7 +7,7 @@ const SignUp = () => {
   return (
     <>
       <div className="flex items-center justify-center">
-        <Form>
+        <Form heading="Sign up" text="please fill the details and create your account">
           <div
             className={`${styles.ga_button} flex items-center justify-center`}
           >
