@@ -31,11 +31,11 @@ const Slider = ({ sliderData }) => {
                 <img src={slider.customer_img} alt="img" />
                 <div className={style.cardRight}>
                   <div className={style.rating}>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
                   </div>
                   <h3>{slider.customer_name}</h3>
                   <p>

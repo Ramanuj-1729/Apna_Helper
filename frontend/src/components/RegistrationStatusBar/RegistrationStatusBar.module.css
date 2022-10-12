@@ -1,0 +1,45 @@
+.wrapper {
+    border: 1px solid var(--gray-midium-color);
+    margin: 40px 120px;
+    border-radius: 5px;
+    padding: 16px 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.line {
+    margin: 0px 32px;
+}
+
+.number {
+    border-radius: 50%;
+    color: white;
+    background-color: var(--gray-midium-color);
+    width: 28px;
+    height: 28px;
+    margin-right: 16px;
+    font-weight: 400;
+}
+
+.text {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--gray-midium-color);
+}
+
+.active_number {
+    background-color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.done_number {
+    background-color: var(--primary-color);
+}
+
+.active_text, .done_text {
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.done_text {
+    color: var(--primary-color);
+}

@@ -6,10 +6,12 @@ import Footer from './components/shared/Footer/Footer';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
-import SignUp from './pages/SignUp/SignUp';
 import TeamDiary from './pages/TeamDiary/TeamDiary';
 import LogIn from './pages/LogIn/LogIn';
-import AccountType from './components/AccountType/AccountType';
+import SignUp from './pages/RegistrationSteps/SignUp/SignUp';
+import AccountType from './pages/RegistrationSteps/AccountType/AccountType';
+import BuildProfile from './pages/RegistrationSteps/BuildProfile/BuildProfile';
+import Finish from './pages/RegistrationSteps/Finish/Finish';
 
 function App() {
   return (
@@ -19,10 +21,12 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<About />} />
         <Route path="/contact-us" element={<Contact />} />
-        <Route path="/sign-up" element={<SignUp />}/>
         <Route path="/team-diary" element={<TeamDiary />}/>
         <Route path="/sign-in" element={<LogIn />}/>
-        <Route path="/sign-up/account-type" element={<AccountType/>}/>
+        <Route path="/register/sign-up" element={<SignUp/>}/>
+        <Route path="/register/account-type" element={<AccountType/>}/>
+        <Route path="/register/build-profile" element={<BuildProfile/>}/>
+        <Route path="/register/finish" element={<Finish/>}/>
       </Routes>
       <Footer />
     </Router>

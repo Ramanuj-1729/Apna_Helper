@@ -1,8 +1,8 @@
 import React from "react";
 
-const Line = ({ width, height }) => {
+const Line = ({ width, height, backgroundColor }) => {
   const lineCss = {
-    backgroundColor: "#37474F",
+    backgroundColor,
     width,
     height,
     borderRadius:"50px"

@@ -19,7 +19,7 @@ const Navbar = () => {
   };
 
   const signUpNavigation = () => {
-    Navigation("/sign-up");
+    Navigation("/register/sign-up");
   };
   const loginNavigation = () => {
     Navigation("/log-in");

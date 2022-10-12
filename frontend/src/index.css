@@ -56,7 +56,9 @@ body {
     --primary-color: #00FFCC;
     --secondary-color:#425e5e;
     --font-color: #203647;
-    --gray-color: #909090;
+    --gray-dark-color: #D3D3D3;
+    --gray-midium-color: #B0B0B0;
+    --gray-light-color: #484848;
     --body-color: #FFF9C0;
     --line-color: #C2C2D6;
 }

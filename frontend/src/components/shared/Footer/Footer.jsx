@@ -40,7 +40,7 @@ const Footer = () => {
                 </div>
 
                 <div className={styles.vertical_line}>
-                    <Line width="1px" height="100%" />
+                    <Line width="1px" height="100%" backgroundColor="var(--gray-light-color)" />
                 </div>
 
                 <div className={`${styles.footer_top_right} flex items-center justify-center direction-col`}>
@@ -73,7 +73,7 @@ const Footer = () => {
             </div>
 
             <div className={styles.horizontal_line}>
-                <Line width="100%" height="1px" />
+                <Line width="100%" height="1px" backgroundColor="var(--gray-light-color)" />
             </div>
 
             <div className={`${styles.footer_bottom} flex`}>
