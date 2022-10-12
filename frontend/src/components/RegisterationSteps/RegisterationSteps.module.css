@@ -1,0 +1,44 @@
+.wrapper{
+    border: 1px solid;
+    border-color: var(--gray-color);
+    padding: 8px 0px;
+    color: var(--gray-color);
+    margin: 40px 120px;
+}
+
+.number{
+    border-radius: 50%;
+    color: white;
+    background-color: var(--gray-color);
+    width: 25px;
+    height: 25px;
+    margin-right: 16px;
+    
+}
+
+.line{
+    /* margin-top: 12px; */
+    /* border-radius: 50%; */
+    margin: 0px 32px;
+}
+ 
+.active_number{
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+        color: white;
+        width: 25px;
+        height: 25px;
+        margin-right: 16px;
+}
+.active_text{
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.done_text{
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+.done_number{
+        background-color: var(--primary-color);
+}

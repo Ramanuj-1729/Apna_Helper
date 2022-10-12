@@ -9,6 +9,7 @@ import Contact from './pages/Contact/Contact';
 import SignUp from './pages/SignUp/SignUp';
 import TeamDiary from './pages/TeamDiary/TeamDiary';
 import LogIn from './pages/LogIn/LogIn';
+import AccountType from './components/AccountType/AccountType';
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
         <Route path="/contact-us" element={<Contact />} />
         <Route path="/sign-up" element={<SignUp />}/>
         <Route path="/team-diary" element={<TeamDiary />}/>
-        <Route path="/log-in" element={<LogIn />}/>
+        <Route path="/sign-in" element={<LogIn />}/>
+        <Route path="/sign-up/account-type" element={<AccountType/>}/>
       </Routes>
       <Footer />
     </Router>

@@ -3,11 +3,34 @@ import styles from "./SignUp.module.css";
 import Line from "../../components/shared/Line/Line";
 import PrimaryButton from "../../components/shared/PrimaryButton/PrimaryButton";
 import Form from "../../components/Form/Form";
+import RegisterationSteps from "../../components/RegisterationSteps/RegisterationSteps";
+import { NavLink, useNavigate } from "react-router-dom";
+
+// import { useLocation } from "react-router-dom";
 const SignUp = () => {
+
+// const Location = useLocation();
+// let path = Location.pathname;
+
+// if(path==="/sign-up")
+// {
+//   state=
+
+// }
+ const Navigation = useNavigate();
+ const accountTypeNavigation = () => {
+   Navigation("/sign-up/account-type");
+ };
+
+
   return (
     <>
+      <RegisterationSteps state={0} />
       <div className="flex items-center justify-center">
-        <Form heading="Sign up" text="please fill the details and create your account">
+        <Form
+          heading="Sign up"
+          text="please fill the details and create your account"
+        >
           <div
             className={`${styles.ga_button} flex items-center justify-center`}
           >
@@ -75,6 +98,7 @@ const SignUp = () => {
 
           <div className={`${styles.signButton} flex`}>
             <PrimaryButton
+              onClick={accountTypeNavigation}
               content="Sign Up"
               backgroundColor="#00FFCC"
               padding="4px 252px"
@@ -84,7 +108,7 @@ const SignUp = () => {
 
           <div className={styles.bottomButton}>
             <span>already have an account ? </span>
-            <button>sign in here</button>
+            <NavLink to="/sign-in">sign in here</NavLink>
           </div>
         </Form>
       </div>
