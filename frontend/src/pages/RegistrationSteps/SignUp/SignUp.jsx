@@ -3,7 +3,8 @@ import styles from "./SignUp.module.css";
 import Line from "../../../components/shared/Line/Line";
 import PrimaryButton from "../../../components/shared/PrimaryButton/PrimaryButton";
 import Form from "../../../components/Form/Form";
-import RegisterationStatusBar from '../../../components/RegistrationStatusBar/RegistrationStatusBar';import { NavLink, useNavigate } from "react-router-dom";
+import RegisterationStatusBar from '../../../components/RegistrationStatusBar/RegistrationStatusBar';
+import { NavLink, useNavigate } from "react-router-dom";
 
 const SignUp = () => {
 
@@ -101,6 +102,9 @@ const SignUp = () => {
                         <NavLink to="/sign-in">sign in here</NavLink>
                     </div>
                 </Form>
+            </div>
+            <div className={styles.waves}>
+                <img src="/images/wave-top.png" alt="oh no" />
             </div>
         </>
     );

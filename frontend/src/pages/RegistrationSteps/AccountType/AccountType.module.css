@@ -1,0 +1,12 @@
+.btn{
+    margin: 30px 0px;
+}
+.btn2{
+    margin-top: 20px;
+}
+.waves img {
+    position: relative;
+    width: 100%;
+    margin: -1rem 0 -5rem 0;
+    z-index: -1;
+}

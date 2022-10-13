@@ -48,8 +48,8 @@ const Navbar = () => {
         <div className={`${styles.auth} flex items-center justify-center `}>
           <div className={styles.leftButton}>
             <SecondaryButton
-              content="Sign In"
-              padding="5px 32px"
+              content="Log In"
+              padding="5px 38px"
               boxShadow="0 0 10px rgba(0, 204, 153, 0.2)"
               color="#00FFCC"
               border="1px solid #00ffcc"
