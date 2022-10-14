@@ -1,5 +1,5 @@
 import React from "react";
-import Form from "../../components/Form/Form";
+import Form from "../../components/shared/Form/Form";
 import SecondaryButton from "../../components/shared/SecondaryButton/SecondaryButton";
 import styles from './Contact.module.css';
 

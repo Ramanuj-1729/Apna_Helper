@@ -2,9 +2,9 @@ import React from "react";
 import styles from "./SignUp.module.css";
 import Line from "../../../../components/shared/Line/Line";
 import PrimaryButton from "../../../../components/shared/PrimaryButton/PrimaryButton";
-import Form from "../../../../components/Form/Form";
+import Form from "../../../../components/shared/Form/Form";
 import { NavLink, useNavigate } from "react-router-dom";
-import Input from "../../../../components/Input/Input";
+import Input from "../../../../components/shared/Input/Input";
 
 const SignUp = () => {
 

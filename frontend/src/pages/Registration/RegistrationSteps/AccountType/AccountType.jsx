@@ -1,5 +1,5 @@
 import React from 'react'
-import Form from '../../../../components/Form/Form'
+import Form from '../../../../components/shared/Form/Form'
 import PrimaryButton from '../../../../components/shared/PrimaryButton/PrimaryButton';
 import styles from './AccountType.module.css';
 import { useNavigate } from "react-router-dom";

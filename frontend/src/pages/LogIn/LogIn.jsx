@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "./LogIn.module.css"
-import Form from '../../components/Form/Form'
+import Form from '../../components/shared/Form/Form'
 import Line from '../../components/shared/Line/Line'
 import PrimaryButton from '../../components/shared/PrimaryButton/PrimaryButton'
 
