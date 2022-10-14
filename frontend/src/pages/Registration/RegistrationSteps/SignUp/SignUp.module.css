@@ -1,4 +1,4 @@
-.ga_button{
+/* .ga_button{
     margin: 24px 0px;
 }
 .ga_button button {
@@ -54,11 +54,11 @@
     margin: 10px 0px;
 }
 .fill input{
-    border-color: var(--gray-color);
+    /* border-color: var(--gray-color);
     border-radius: 10px;
     padding: 10px 4px;
-    margin: 10px 0px    ;
-}
+    margin: 10px 0px; */
+/* }
 .fill div input:first-child{
     margin-right:25px ;
 }
@@ -67,4 +67,4 @@
     width: 100%;
     margin: -1rem 0 -5rem 0;
     z-index: -1;
-}
+} */

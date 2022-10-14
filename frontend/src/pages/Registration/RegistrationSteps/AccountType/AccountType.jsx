@@ -1,7 +1,6 @@
 import React from 'react'
-import Form from '../../../components/Form/Form'
-import RegisterationStatusBar from '../../../components/RegistrationStatusBar/RegistrationStatusBar';
-import PrimaryButton from '../../../components/shared/PrimaryButton/PrimaryButton';
+import Form from '../../../../components/Form/Form'
+import PrimaryButton from '../../../../components/shared/PrimaryButton/PrimaryButton';
 import styles from './AccountType.module.css';
 import { useNavigate } from "react-router-dom";
 
@@ -13,7 +12,6 @@ const AccountType = () => {
 
   return (
     <>
-      <RegisterationStatusBar state={2} />
       <div className={`${styles.wrapper} flex items-center justify-center`}>
         <Form heading="Select Account Type" text="Don't worry this can be changed later">
 

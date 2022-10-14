@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./SignUp.module.css";
-import Line from "../../../components/shared/Line/Line";
-import PrimaryButton from "../../../components/shared/PrimaryButton/PrimaryButton";
-import Form from "../../../components/Form/Form";
-import RegisterationStatusBar from '../../../components/RegistrationStatusBar/RegistrationStatusBar';
+import Line from "../../../../components/shared/Line/Line";
+import PrimaryButton from "../../../../components/shared/PrimaryButton/PrimaryButton";
+import Form from "../../../../components/Form/Form";
 import { NavLink, useNavigate } from "react-router-dom";
+import Input from "../../../../components/Input/Input";
 
 const SignUp = () => {
 
@@ -13,18 +13,11 @@ const SignUp = () => {
         Navigation("/register/account-type");
     };
 
-
     return (
         <>
-            <RegisterationStatusBar state={1} />
             <div className="flex items-center justify-center">
-                <Form
-                    heading="Sign up"
-                    text="please fill the details and create your account"
-                >
-                    <div
-                        className={`${styles.ga_button} flex items-center justify-center`}
-                    >
+                <Form heading="Sign up" text="please fill the details and create your account" >
+                    <div className={`${styles.ga_button} flex items-center justify-center`} >
                         <button className="flex items-center justify-center">
                             <img src="/images/google-logo.png" alt="" />
                             <span>Sign up with Google</span>
@@ -47,41 +40,15 @@ const SignUp = () => {
                         </div>
                     </div>
 
-                    <div className={`${styles.fill} flex direction-col`}>
+                    <div className={`${styles.fill}`}>
                         <div className="flex">
-                            <input
-                                id="place"
-                                type="text"
-                                className={styles.fname}
-                                name=" First Name"
-                                placeholder="First Name"
-                            />
-                            <input
-                                id="place"
-                                className={styles.lname}
-                                type="text"
-                                name=" Last Name"
-                                placeholder="Last Name"
-                            />
+                            <Input name="first-name" type="text" iconClasses="fa-solid fa-user" label="First Name" />
+                            <Input name="last-name" type="text" iconClasses="fa-solid fa-user" label="Last Name" />
                         </div>
-                        <input
-                            id="place"
-                            type="Email"
-                            name="Email Address"
-                            placeholder="email"
-                        />
-                        <input
-                            id="place"
-                            type="password"
-                            name="create password"
-                            placeholder="create Password"
-                        />
-                        <input
-                            id="place"
-                            type="password"
-                            name="confirm password"
-                            placeholder="confirm Password"
-                        />
+
+                        <Input name="email" type="email" iconClasses="fa-solid fa-at" label="Email" />
+                        <Input name="email" type="email" iconClasses="fa-solid fa-at" label="Email" />
+                        <Input name="email" type="email" iconClasses="fa-solid fa-at" label="Email" />
                     </div>
                     <div className={styles.line3}>
                         <Line width="580px" height="1px" backgroundColor="var(--gray-midium-color)" />

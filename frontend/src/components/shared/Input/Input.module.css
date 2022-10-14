@@ -1,0 +1,23 @@
+.input_wrapper {
+    position: relative; 
+}
+
+.input_wrapper input {
+    border: 2px solid var(--gray-midium-color);
+    border-radius: 5px;
+    padding: 8px 40px;
+}
+
+.input_wrapper i{
+    position: absolute;
+    left: 16px;
+    pointer-events: none;
+    color: var(--gray-midium-color);
+}
+
+.input_wrapper label {
+    position: absolute;
+    left: 40px;
+    pointer-events: none;
+    color: var(--gray-midium-color);
+}

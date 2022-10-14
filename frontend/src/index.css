@@ -45,8 +45,13 @@ a {
     text-decoration: none;
 }
 
+input {
+    outline: none;
+}
+
 body {
-    background-color: var(--body-color);}
+    background-color: var(--body-color);
+}
 
 
 /* root  */
