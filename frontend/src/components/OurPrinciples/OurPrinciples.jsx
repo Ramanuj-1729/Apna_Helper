@@ -50,6 +50,7 @@ const OurPrinciples = () => {
           </div>
         </div>
       </div>
+      
     </>
   );
 };

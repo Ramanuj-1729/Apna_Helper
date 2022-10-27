@@ -18,6 +18,19 @@
 .waves img{
     width: 100%;
 }
+.wavebottom img{
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    margin-top: -8rem;
+}
+.back img{
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    margin-top: -13rem;
+    margin-bottom: 4rem;
+}
 .background {
     height: 500px;
     width: 100%;

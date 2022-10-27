@@ -24,11 +24,18 @@ const Home = () => {
 
         <HowItWorks />
       </div>
+      
       <div className={style.ourSatisfiedCustomer}>
         <h2 className="justify-center items-center flex">
           Our Customer Reviews
         </h2>
         <Slider sliderData={sliderData} />
+      </div>
+      <div className={style.back}>
+        <img src="/images/background.png" alt="" />
+      </div>
+      <div className={style.wavebottom}>
+        <img src="/images/wave-bottom.png" alt="oh no" />
       </div>
     </>
   );
