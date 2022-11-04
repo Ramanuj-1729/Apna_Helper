@@ -2,14 +2,14 @@
     font-weight: 500;
     font-size: 25px;
 }
-/* .input{
-    /* border-top: 0;
-    border-left: none;
-    border-right: none; */
-    /* border: none;
-    outline: none; */
-    /* border: none;
-        outline-width: 0; */
+
+.input input {
+    border: none;
+    border-bottom: 2px solid var(--line-color);
+    margin-right: 16px;
+    width: 50px;
+}
+
 .color{
     color: var(--primary-color);
 }
