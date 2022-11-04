@@ -21,7 +21,7 @@ const SignUp = () => {
                         <button className="flex items-center justify-center">
                             <img src="/images/google-logo.png" alt="" />
                             <span>Sign up with Google</span>
-                        </button>
+                        </button> 
                         <div className={styles.darkButton}>
                             <button className=" flex items-center justify-center">
                                 <img src="/images/apple-logo.png" alt="" />

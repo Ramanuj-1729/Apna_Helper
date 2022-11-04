@@ -13,6 +13,9 @@ import AccountType from './pages/Registration/RegistrationSteps/AccountType/Acco
 import BuildProfile from './pages/Registration/RegistrationSteps/BuildProfile/BuildProfile';
 import Finish from './pages/Registration/RegistrationSteps/Finish/Finish';
 import Registration from './pages/Registration/Registration';
+import ProfilePicture from './pages/Registration/RegistrationSteps/BuildProfile/BuildProfileSteps/ProfilePicture/ProfilePicture';
+import MobileNumber from './pages/Registration/RegistrationSteps/BuildProfile/BuildProfileSteps/MobileNumber/MobileNumber';
+import Verification from './pages/Registration/RegistrationSteps/BuildProfile/BuildProfileSteps/Verification/Verification';
 
 function App() {
   return (
@@ -27,7 +30,11 @@ function App() {
         <Route path="register" element={<Registration />}>
           <Route path="sign-up" element={<SignUp />} />
           <Route path="account-type" element={<AccountType />} />
-          <Route path="build-profile" element={<BuildProfile />} />
+          <Route path="build-profile" element={<BuildProfile />}>
+            <Route path="profile-picture" element={<ProfilePicture />} />
+            <Route path="mobile-number" element={<MobileNumber />} />
+            <Route path="verification" element={<Verification />} />
+          </Route>
           <Route path="finish" element={<Finish />} />
         </Route>
 

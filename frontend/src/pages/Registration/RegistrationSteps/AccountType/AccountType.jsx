@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 const AccountType = () => {
   const Navigation = useNavigate();
   const buildProfileNavigation = () => {
-    Navigation("/register/build-profile");
+    Navigation("/register/build-profile/profile-picture");
   };
 
   return (

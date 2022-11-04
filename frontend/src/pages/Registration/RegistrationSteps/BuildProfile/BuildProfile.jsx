@@ -1,13 +1,22 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom'
 import Form from '../../../../components/shared/Form/Form'
-// import styles from './BuildProfile.module.css'
+import styles from './BuildProfile.module.css'
 
 const BuildProfile = () => {
     return (
         <>
-            <Form heading="Build Profile" text="Don't worry this can be changed later">
+            <div className='flex direction-col justify-center items-center'>
+                <Form heading="Build Proflie" text="we are taking these details for communication purposes">
+                    <Outlet></Outlet>
+                </Form>
 
-            </Form>
+            </div>
+            <div className={styles.waves}>
+                <img src="/images/wave-top.png" alt="oh no" />
+            </div>
+
+
         </>
     )
 }
