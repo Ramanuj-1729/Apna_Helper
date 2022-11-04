@@ -16,18 +16,23 @@ import Registration from './pages/Registration/Registration';
 import ProfilePicture from './pages/Registration/RegistrationSteps/BuildProfile/BuildProfileSteps/ProfilePicture/ProfilePicture';
 import MobileNumber from './pages/Registration/RegistrationSteps/BuildProfile/BuildProfileSteps/MobileNumber/MobileNumber';
 import Verification from './pages/Registration/RegistrationSteps/BuildProfile/BuildProfileSteps/Verification/Verification';
+import { useState } from 'react';
 
 function App() {
+  const [showNav, setShowNav] = useState(true);
+  const [showFooter, setShowFooter] = useState(true);
   return (
     <Router>
-      <Navigation />
+      {showNav &&
+        <Navigation />
+      }
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about-us" element={<About />} />
         <Route path="contact-us" element={<Contact />} />
         <Route path="team-diary" element={<TeamDiary />} />
-        <Route path="log-in" element={<LogIn />} />
-        <Route path="register" element={<Registration />}>
+        <Route path="log-in" element={<LogIn funcNav={setShowNav} />} />
+        <Route path="register" element={<Registration  funcNav={setShowNav} />}>
           <Route path="sign-up" element={<SignUp />} />
           <Route path="account-type" element={<AccountType />} />
           <Route path="build-profile" element={<BuildProfile />}>
@@ -39,7 +44,9 @@ function App() {
         </Route>
 
       </Routes>
-      <Footer />
+      {showFooter &&
+        <Footer />
+      }
     </Router>
   );
 }

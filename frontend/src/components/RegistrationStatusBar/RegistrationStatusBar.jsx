@@ -51,12 +51,12 @@ const RegistrationStatusBar = ({ state }) => {
             </div>
 
             <div className="flex items-center justify-center">
-                <div className={`${state === 4 ? styles.done_number : ""} ${styles.number} flex items-center justify-center`}>
-                    <img style={state === 4 ? {} : { display: "none" }} src="/images/check.png" alt="check" />
-                    <span style={state != 4 ? {} : { display: "none" }}>4</span>
+                <div className={`${state === 4 ? styles.active_number : state > 4 ? styles.done_number : ""} ${styles.number} flex items-center justify-center`}>
+                    <img style={state > 4 ? {} : { display: "none" }} src="/images/check.png" alt="check" />
+                    <span style={state <= 4 ? {} : { display: "none" }}>4</span> 
                 </div>
 
-                <div className={`${state === 4 ? styles.done_text : ""} ${styles.text}`} >
+                <div className={`${state === 4 ? styles.active_text : state > 4 ? styles.done_text : ""} ${styles.text}`} >
                     Finish
                 </div>
             </div>

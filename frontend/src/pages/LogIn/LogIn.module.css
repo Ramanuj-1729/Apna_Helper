@@ -1,5 +1,5 @@
-.sign_up {
-    display: inline-block;
+.login_wrapper{
+    margin-top: 48px;
 }
 
 .ga_button {
@@ -59,25 +59,6 @@
     margin-bottom: 20px;
 }
 
-.lname,
-.fname {
-    flex: 50%;
-}
-
-.fill {
-    margin: 10px 0px;
-}
-
-.fill input {
-    border-color: var(--gray-color);
-    border-radius: 10px;
-    padding: 10px 4px;
-    margin: 10px 0px;
-}
-
-.fill div input:first-child {
-    margin-right: 25px;
-}
 .waves img{
     position: relative;
         width: 100%;

@@ -1,11 +1,17 @@
 .input_wrapper {
-    position: relative; 
+    position: relative;
+    margin: 24px 0px;
 }
 
 .input_wrapper input {
     border: 2px solid var(--gray-midium-color);
     border-radius: 5px;
     padding: 8px 40px;
+    width: 100%;
+}
+
+.input_wrapper input:focus ~ label, .input_wrapper input:valid ~ label {
+    transform: translateY(-22px);
 }
 
 .input_wrapper i{
@@ -16,6 +22,9 @@
 }
 
 .input_wrapper label {
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 0 0.5rem;
     position: absolute;
     left: 40px;
     pointer-events: none;

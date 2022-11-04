@@ -21,7 +21,7 @@ const SignUp = () => {
                         <button className="flex items-center justify-center">
                             <img src="/images/google-logo.png" alt="" />
                             <span>Sign up with Google</span>
-                        </button> 
+                        </button>
                         <div className={styles.darkButton}>
                             <button className=" flex items-center justify-center">
                                 <img src="/images/apple-logo.png" alt="" />
@@ -41,14 +41,9 @@ const SignUp = () => {
                     </div>
 
                     <div className={`${styles.fill}`}>
-                        <div className="flex">
-                            <Input name="first-name" type="text" iconClasses="fa-solid fa-user" label="First Name" />
-                            <Input name="last-name" type="text" iconClasses="fa-solid fa-user" label="Last Name" />
-                        </div>
-
-                        <Input name="email" type="email" iconClasses="fa-solid fa-at" label="Email" />
-                        <Input name="email" type="email" iconClasses="fa-solid fa-at" label="Email" />
-                        <Input name="email" type="email" iconClasses="fa-solid fa-at" label="Email" />
+                        <Input name="email" type="text" iconClasses="fa-solid fa-at" label="Email" />
+                        <Input name="password" type="password" iconClasses="fa-solid fa-lock" label="Password" />
+                        <Input name="password" type="password" iconClasses="fa-solid fa-lock" label="Password" />
                     </div>
                     <div className={styles.line3}>
                         <Line width="580px" height="1px" backgroundColor="var(--gray-midium-color)" />

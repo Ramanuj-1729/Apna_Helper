@@ -2,7 +2,8 @@ import React from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import RegistrationStatusBar from '../../components/RegistrationStatusBar/RegistrationStatusBar';
 
-const Registration = () => {
+const Registration = (props) => {
+    props.funcNav(false);
     const Location = useLocation();
     let path = Location.pathname;
 
