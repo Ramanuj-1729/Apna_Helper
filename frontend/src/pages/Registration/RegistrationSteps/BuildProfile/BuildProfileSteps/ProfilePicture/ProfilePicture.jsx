@@ -3,8 +3,6 @@ import styles from './ProfilePicture.module.css'
 import PrimaryButton from '../../../../../../components/shared/PrimaryButton/PrimaryButton'
 import { useNavigate } from "react-router-dom";
 
-
-
 const ProfilePicture = () => {
     const Navigation = useNavigate();
     const step2Navigation = () => {

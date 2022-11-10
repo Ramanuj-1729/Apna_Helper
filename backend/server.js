@@ -5,6 +5,7 @@ import errorHandler from './middlewares/errorHandler';
 const app = express();
 import routes from './routes';
 import path from 'path';
+import cors from 'cors';
 
 // DB Connection
 mongoose.connect(DB_URL, {
@@ -19,6 +20,7 @@ db.once('open', () => {
 });
 
 global.appRoot = path.resolve(__dirname);
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 app.use('/api', routes);

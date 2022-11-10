@@ -4,13 +4,40 @@ import Form from '../../components/shared/Form/Form'
 import Line from '../../components/shared/Line/Line'
 import PrimaryButton from '../../components/shared/PrimaryButton/PrimaryButton'
 import Input from '../../components/shared/Input/Input';
+import { useState } from 'react';
+import axios from "axios";
 
 const LogIn = (props) => {
+  const [data, setData] = useState({ email: "", password: "" });
+  const [error, setError] = useState("");
+
+  const handleChange = ({ currentTarget: input }) => {
+    setData({ ...data, [input.name]: input.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const url = "http://localhost:5000/api/login";
+      const { data: res } = await axios.post(url, data);
+      localStorage.setItem("token", res.data);
+      window.location = "/";
+    } catch (error) {
+      if (
+        error.response &&
+        error.response.status >= 400 &&
+        error.response.status <= 500
+      ) {
+        setError(error.response.data.message);
+      }
+    }
+  };
+
   props.funcNav(false);
   return (
     <>
       <div className={`${styles.login_wrapper} flex items-center justify-center`}>
-        <Form heading="Log In" text="welcome back, Please LogIn to your account">
+        <Form heading="Log In" text="welcome back, Please LogIn to your account" onSubmit={handleSubmit}>
           <div className={`${styles.ga_button} flex items-center justify-center`}>
             <button className="flex items-center justify-center">
               <img src="images/google-logo.png" alt="" />
@@ -35,8 +62,8 @@ const LogIn = (props) => {
           </div>
 
           <div className={`${styles.fill}`}>
-            <Input name="email" type="text" iconClasses="fa-solid fa-at" label="Email" />
-            <Input name="password" type="password" iconClasses="fa-solid fa-lock" label="Password" />
+            <Input name="email" type="text" iconClasses="fa-solid fa-at" label="Email" value={data.email} onChange={handleChange} />
+            <Input name="password" type="password" iconClasses="fa-solid fa-lock" label="Password" value={data.password} onChange={handleChange} />
           </div>
           <div>
             <input type="checkbox" />
@@ -52,6 +79,7 @@ const LogIn = (props) => {
               backgroundColor="#425E5E"
               padding="8px 264px"
               boxShadow="0px 8px 25px 2px rgba(66, 94, 94, 0.25)"
+              type="submit"
             />
           </div>
 
