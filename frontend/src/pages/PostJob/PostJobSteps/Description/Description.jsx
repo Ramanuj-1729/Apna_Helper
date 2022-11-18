@@ -3,8 +3,13 @@ import Line from '../../../../components/shared/Line/Line'
 import PrimaryButton from '../../../../components/shared/PrimaryButton/PrimaryButton'
 import SecondaryButton from '../../../../components/shared/SecondaryButton/SecondaryButton'
 import styles from './Description.module.css'
+import { useNavigate } from "react-router-dom";
 
 const Description = () => {
+  const Navigation = useNavigate();
+    const postDescription = () => {
+        Navigation('/post-job/budget')
+    }
   return (
     <>
     
@@ -24,11 +29,11 @@ const Description = () => {
           <input type="text" />
           <h4>Example Description</h4>
           <p>
-            i need a helper who can deliver 2 chairs to my shop , my shop is 5km from my house the helper can take address from me
+            i need a helper who can deliver 2 <br/> chairs to my shop , <br /> my shop is 5km from my house the helper can take address from me
           </p>
           <div className={styles.button}>
             <SecondaryButton content="Back" border="1px solid" padding="6px 50px" boxShadow="0px 12px 25px rgba(66, 94, 94, 0.25)"></SecondaryButton>
-            <PrimaryButton content="Next" backgroundColor="#425E5E" padding="6px 50px"></PrimaryButton>
+            <PrimaryButton content="Next" backgroundColor="#425E5E" padding="6px 50px" onClick={postDescription}></PrimaryButton>
 
           </div>
         </div>

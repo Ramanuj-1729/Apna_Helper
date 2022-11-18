@@ -26,7 +26,7 @@ const SignUp = () => {
         try {
             const url = "http://localhost:5000/api/signup";
             const { data: res } = await axios.post(url, data);
-            navigate("/register/build-profile/profile-picture");
+            navigate("/register/build-profile/user-name");
         } catch (error) {
             if (
                 error.response &&

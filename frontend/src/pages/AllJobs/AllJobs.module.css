@@ -16,4 +16,9 @@
 }
 .button{
     margin-left: 655px;
+    margin-bottom: 24px;
+}
+
+.wrapper {
+    margin: 64px 0;
 }

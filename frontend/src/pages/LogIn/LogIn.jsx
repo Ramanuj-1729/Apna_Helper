@@ -6,8 +6,10 @@ import PrimaryButton from '../../components/shared/PrimaryButton/PrimaryButton'
 import Input from '../../components/shared/Input/Input';
 import { useState } from 'react';
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const LogIn = (props) => {
+  const Navigation = useNavigate();
   const [data, setData] = useState({ email: "", password: "" });
   const [error, setError] = useState("");
 
@@ -16,21 +18,22 @@ const LogIn = (props) => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const url = "http://localhost:5000/api/login";
-      const { data: res } = await axios.post(url, data);
-      localStorage.setItem("token", res.data);
-      window.location = "/";
-    } catch (error) {
-      if (
-        error.response &&
-        error.response.status >= 400 &&
-        error.response.status <= 500
-      ) {
-        setError(error.response.data.message);
-      }
-    }
+    // e.preventDefault();
+    // try {
+    //   const url = "http://localhost:5000/api/login";
+    //   const { data: res } = await axios.post(url, data);
+    //   localStorage.setItem("token", res.data);
+      // window.location = "/";
+    // } catch (error) {
+    //   if (
+    //     error.response &&
+    //     error.response.status >= 400 &&
+    //     error.response.status <= 500
+    //   ) {
+    //     setError(error.response.data.message);
+    //   }
+    // }
+    Navigation('/post-job/title');
   };
 
   props.funcNav(false);
@@ -80,6 +83,7 @@ const LogIn = (props) => {
               padding="8px 264px"
               boxShadow="0px 8px 25px 2px rgba(66, 94, 94, 0.25)"
               type="submit"
+              onClick={handleSubmit}
             />
           </div>
 

@@ -12,10 +12,10 @@ const Registration = (props) => {
     if (path === '/register/sign-up') {
         state = 1;
     }
-    else if (path === '/register/build-profile/user-name' || path === '/register/build-profile/profile-picture' || path === '/register/build-profile/address') {
+    else if (path === '/register/build-profile/user-name' || path === '/register/build-profile/profile-picture' || path === '/register/build-profile/default-address') {
         state = 2;
     }
-    else if (path === '/register/finish') {
+    else if (path === '/register/build-profile/finish') {
         state = 3;
     }
 

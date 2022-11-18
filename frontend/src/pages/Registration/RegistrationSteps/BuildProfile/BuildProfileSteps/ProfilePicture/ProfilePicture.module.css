@@ -9,6 +9,12 @@
 
 .pic {
     margin: 20px 0px;
-    width:150px
+    width:150px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.pic input {
+    display: none;
 }
 

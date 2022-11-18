@@ -13,8 +13,6 @@ const ReviewPost = () => {
           <input type="text" />
           <h3>Address</h3>
           <input type="text" />
-
-
         </Form>
       </div>
     </>

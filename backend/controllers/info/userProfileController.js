@@ -18,11 +18,11 @@ const storage = multer.diskStorage({
 const handleMultipartData = multer({
     storage,
     limits: { fileSize: 1000000 * 5 },
-}).single('image');
+}).single('profile_picture');
 
 const userProfileController = {
     async info(req, res, next) {
-        handleMultipartData(req, res, async(err) => {
+        handleMultipartData(req, res, async (err) => {
             if (err) {
                 return next(CustomErrorHandler.serverError(err.message));
             }
@@ -30,32 +30,47 @@ const userProfileController = {
             const filePath = req.file.path;
 
             const userProfileSchema = Joi.object({
-                mobile_number: Joi.string().length(10).pattern(/^[0-9]+$/).required(),
-                user_name: Joi.string().required()
+                // mobile_number: Joi.string().length(10).pattern(/^[0-9]+$/).required(),
+                user_name: Joi.string().required(),
+                full_name: Joi.string().required(),
+                phone_number: Joi.string().length(10).pattern(/^[0-9]+$/).required(),
+                pincode: Joi.string().length(6).required(),
+                house_number: Joi.string().required(),
+                area: Joi.string().required(),
+                state: Joi.string().required(),
+                landmark: Joi.string(),
             });
             const { error } = userProfileSchema.validate(req.body);
             if (error) {
                 // delete the uploded image
                 fs.unlink(`${appRoot}/${filePath}`, (err) => {
-                    if(err){
+                    if (err) {
                         return next(CustomErrorHandler.serverError(err.message));
                     }
                 });
                 return next(error);
             }
 
-            const { mobile_number, user_name } = req.body;
+            const { /*mobile_number,*/ user_name, full_name, phone_number, pincode, house_number, area, state, landmark } = req.body;
             let userProfileDocument;
 
             try {
                 userProfileDocument = await UserProfile.create({
-                    image: filePath,
-                    mobile_number,
-                    user_name
+                    profile_picture: filePath,
+                    // mobile_number,
+                    user_name,
+                    full_name,
+                    phone_number,
+                    pincode,
+                    house_number,
+                    area,
+                    state,
+                    landmark
                 });
+
             } catch (err) {
                 fs.unlink(`${appRoot}/${filePath}`, (err) => {
-                    if(err){
+                    if (err) {
                         return next(CustomErrorHandler.serverError(err.message));
                     }
                 });

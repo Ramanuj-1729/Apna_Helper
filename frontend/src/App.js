@@ -10,7 +10,6 @@ import TeamDiary from './pages/TeamDiary/TeamDiary';
 import LogIn from './pages/LogIn/LogIn';
 import SignUp from './pages/Registration/RegistrationSteps/SignUp/SignUp';
 import BuildProfile from './pages/Registration/RegistrationSteps/BuildProfile/BuildProfile';
-import Finish from './pages/Registration/RegistrationSteps/Finish/Finish';
 import Registration from './pages/Registration/Registration';
 import ProfilePicture from './pages/Registration/RegistrationSteps/BuildProfile/BuildProfileSteps/ProfilePicture/ProfilePicture';
 // import MobileNumber from './pages/Registration/RegistrationSteps/BuildProfile/BuildProfileSteps/MobileNumber/MobileNumber';
@@ -23,7 +22,8 @@ import Address from './pages/PostJob/PostJobSteps/Address/Address'
 import Budget from './pages/PostJob/PostJobSteps/Budget/Budget'
 import WorkType from './pages/WorkType/WorkType';
 import UserName from './pages/Registration/RegistrationSteps/BuildProfile/BuildProfileSteps/UserName/UserName';
-import DefaultAddress from './pages/Registration/RegistrationSteps/BuildProfile/BuildProfileSteps/DefaultAddress';
+import DefaultAddress from './pages/Registration/RegistrationSteps/BuildProfile/BuildProfileSteps/DefaultAddress/DefaultAddress';
+import Finish from './pages/Registration/RegistrationSteps/BuildProfile/BuildProfileSteps/Finish/Finish';
 import AllJobs from './pages/AllJobs/AllJobs';
 
 function App() {
@@ -47,10 +47,10 @@ function App() {
             <Route path="profile-picture" element={<ProfilePicture />} />
             <Route path="user-name" element={<UserName/>}/>
             <Route path="default-address" element={<DefaultAddress/>}/>
+            <Route path="finish" element={<Finish />} />
             {/* <Route path="mobile-number" element={<MobileNumber />} /> */}
             {/* <Route path="verification" element={<Verification />} /> */}
           </Route>
-          <Route path="finish" element={<Finish />} />
         </Route>
         <Route path="post-job" element={<PostJob />} >
           <Route path="title" element={<Title/>}/>

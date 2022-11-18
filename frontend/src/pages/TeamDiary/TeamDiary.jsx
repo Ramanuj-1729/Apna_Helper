@@ -46,7 +46,7 @@ const TeamDiary = () => {
         </div>
 
         <div className={style.face}>
-          <img src="images/asati.png" alt="" />
+          <img src="images/ketan.png" alt="" />
         </div>
 
         <div className={style.icons}>

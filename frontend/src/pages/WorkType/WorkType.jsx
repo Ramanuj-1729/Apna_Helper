@@ -11,7 +11,7 @@ const WorkType = () => {
   };
 
   const hireHelper = () => {
-    Navigation("/jobs");
+    Navigation("/all-jobs");
   };
 
   return (
