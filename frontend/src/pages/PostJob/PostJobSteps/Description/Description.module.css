@@ -1,0 +1,37 @@
+.wrapper {
+    margin-top: 40px;
+}
+
+.head h3 {
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+.head h2 {
+    font-size: 25px;
+    color: var(--secondary-color);
+}
+
+.line {
+    margin: 0px 20px;
+}
+
+.right input {
+    width: 350px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.right h4 {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+
+
+.button {
+    margin-top: 40px;
+    display: flex;
+}

@@ -16,9 +16,7 @@ import Registration from './pages/Registration/Registration';
 import ProfilePicture from './pages/Registration/RegistrationSteps/BuildProfile/BuildProfileSteps/ProfilePicture/ProfilePicture';
 import MobileNumber from './pages/Registration/RegistrationSteps/BuildProfile/BuildProfileSteps/MobileNumber/MobileNumber';
 import Verification from './pages/Registration/RegistrationSteps/BuildProfile/BuildProfileSteps/Verification/Verification';
-<<<<<<< Updated upstream
 import { useState } from 'react';
-=======
 import PostJob from './pages/PostJob/PostJob';
 import Description from './pages/PostJob/PostJobSteps/Description/Description'
 import Title from './pages/PostJob/PostJobSteps/Title/Title'
