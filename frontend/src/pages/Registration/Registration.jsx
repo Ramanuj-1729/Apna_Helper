@@ -12,14 +12,11 @@ const Registration = (props) => {
     if (path === '/register/sign-up') {
         state = 1;
     }
-    else if (path === '/register/account-type') {
+    else if (path === '/register/build-profile/user-name' || path === '/register/build-profile/profile-picture' || path === '/register/build-profile/address') {
         state = 2;
     }
-    else if (path === '/register/build-profile') {
-        state = 3;
-    }
     else if (path === '/register/finish') {
-        state = 4;
+        state = 3;
     }
 
     return (

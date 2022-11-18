@@ -27,7 +27,7 @@ const RegistrationStatusBar = ({ state }) => {
                 </div>
 
                 <div className={`${state === 2 ? styles.active_text : state > 2 ? styles.done_text : ""} ${styles.text}`} >
-                    Select Account Type
+                    Build Profile
                 </div>
             </div>
 
@@ -42,21 +42,6 @@ const RegistrationStatusBar = ({ state }) => {
                 </div>
 
                 <div className={`${state === 3 ? styles.active_text : state > 3 ? styles.done_text : ""} ${styles.text}`} >
-                    Build Profile
-                </div>
-            </div>
-
-            <div className={styles.line}>
-                <Line height={state >= 4 ? "2px" : "1px"} width="100px" backgroundColor={state >= 4 ? "var(--primary-color)" : "var(--gray-midium-color)"} />
-            </div>
-
-            <div className="flex items-center justify-center">
-                <div className={`${state === 4 ? styles.active_number : state > 4 ? styles.done_number : ""} ${styles.number} flex items-center justify-center`}>
-                    <img style={state > 4 ? {} : { display: "none" }} src="/images/check.png" alt="check" />
-                    <span style={state <= 4 ? {} : { display: "none" }}>4</span> 
-                </div>
-
-                <div className={`${state === 4 ? styles.active_text : state > 4 ? styles.done_text : ""} ${styles.text}`} >
                     Finish
                 </div>
             </div>

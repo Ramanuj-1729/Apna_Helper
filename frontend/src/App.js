@@ -9,7 +9,6 @@ import Contact from './pages/Contact/Contact';
 import TeamDiary from './pages/TeamDiary/TeamDiary';
 import LogIn from './pages/LogIn/LogIn';
 import SignUp from './pages/Registration/RegistrationSteps/SignUp/SignUp';
-// import AccountType from './pages/Registration/RegistrationSteps/AccountType/AccountType';
 import BuildProfile from './pages/Registration/RegistrationSteps/BuildProfile/BuildProfile';
 import Finish from './pages/Registration/RegistrationSteps/Finish/Finish';
 import Registration from './pages/Registration/Registration';
@@ -22,6 +21,7 @@ import Description from './pages/PostJob/PostJobSteps/Description/Description'
 import Title from './pages/PostJob/PostJobSteps/Title/Title'
 import Address from './pages/PostJob/PostJobSteps/Address/Address'
 import Budget from './pages/PostJob/PostJobSteps/Budget/Budget'
+import WorkType from './pages/WorkType/WorkType';
 
 function App() {
   const [showNav, setShowNav] = useState(true);
@@ -36,10 +36,10 @@ function App() {
         <Route path="about-us" element={<About />} />
         <Route path="contact-us" element={<Contact />} />
         <Route path="team-diary" element={<TeamDiary />} />
+        <Route path="work-type" element={<WorkType />} />
         <Route path="log-in" element={<LogIn funcNav={setShowNav} />} />
         <Route path="register" element={<Registration  funcNav={setShowNav} />}>
           <Route path="sign-up" element={<SignUp />} />
-          {/* <Route path="account-type" element={<AccountType />} /> */}
           <Route path="build-profile" element={<BuildProfile />}>
             <Route path="profile-picture" element={<ProfilePicture />} />
             {/* <Route path="mobile-number" element={<MobileNumber />} /> */}
