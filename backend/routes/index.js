@@ -1,6 +1,6 @@
 import express from 'express';
 const router = express.Router();
-import { signupController, loginController, userController, refreshController, helperController, customerController, userProfileController } from '../controllers';
+import { signupController, loginController, userController, refreshController, helperController, customerController, userProfileController, jobsController } from '../controllers';
 import auth from '../middlewares/auth';
 
 router.post('/signup', signupController.signup);
@@ -11,5 +11,6 @@ router.post('/logout', auth, loginController.logout);
 router.post('/helper', helperController.info);
 router.post('/customer', customerController.info);
 router.post('/userProfile', userProfileController.info);
+router.post('/jobs', jobsController.postJobs);
 
 export default router;

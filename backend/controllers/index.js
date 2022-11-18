@@ -5,3 +5,4 @@ export { default as refreshController } from './auth/refreshController';
 export { default as customerController } from './info/customerController';
 export { default as helperController } from './info/helperController';
 export { default as userProfileController } from './info/userProfileController';
+export { default as jobsController } from './jobsController';
