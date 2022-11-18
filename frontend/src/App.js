@@ -25,6 +25,7 @@ import WorkType from './pages/WorkType/WorkType';
 import UserName from './pages/Registration/RegistrationSteps/BuildProfile/BuildProfileSteps/UserName/UserName';
 import DefaultAddress from './pages/Registration/RegistrationSteps/BuildProfile/BuildProfileSteps/DefaultAddress';
 import AllJobs from './pages/AllJobs/AllJobs';
+import Dashboard from './pages/Dashboard/Dashboard';
 
 function App() {
   const [showNav, setShowNav] = useState(true);
@@ -59,6 +60,7 @@ function App() {
           <Route path="address" element={<Address/>}/>
         </Route>
         <Route path="all-jobs" element={<AllJobs/>}/>
+        <Route path="dashboard" element={<Dashboard/>}/>
 
       </Routes>
       {showFooter &&
