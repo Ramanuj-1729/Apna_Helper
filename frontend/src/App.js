@@ -16,7 +16,14 @@ import Registration from './pages/Registration/Registration';
 import ProfilePicture from './pages/Registration/RegistrationSteps/BuildProfile/BuildProfileSteps/ProfilePicture/ProfilePicture';
 import MobileNumber from './pages/Registration/RegistrationSteps/BuildProfile/BuildProfileSteps/MobileNumber/MobileNumber';
 import Verification from './pages/Registration/RegistrationSteps/BuildProfile/BuildProfileSteps/Verification/Verification';
+<<<<<<< Updated upstream
 import { useState } from 'react';
+=======
+import PostJob from './pages/PostJob/PostJob';
+import Description from './pages/PostJob/PostJobSteps/Description/Description'
+import Title from './pages/PostJob/PostJobSteps/Title/Title'
+import Address from './pages/PostJob/PostJobSteps/Address/Address'
+import Budget from './pages/PostJob/PostJobSteps/Budget/Budget'
 
 function App() {
   const [showNav, setShowNav] = useState(true);
@@ -41,6 +48,12 @@ function App() {
             <Route path="verification" element={<Verification />} />
           </Route>
           <Route path="finish" element={<Finish />} />
+        </Route>
+        <Route path="post-job" element={<PostJob />} >
+          <Route path="title" element={<Title/>}/>
+          <Route path="description" element={<Description/>}/>
+          <Route path="budget" element={<Budget/>}/>
+          <Route path="address" element={<Address/>}/>
         </Route>
 
       </Routes>
