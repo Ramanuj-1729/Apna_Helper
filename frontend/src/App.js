@@ -22,6 +22,8 @@ import Title from './pages/PostJob/PostJobSteps/Title/Title'
 import Address from './pages/PostJob/PostJobSteps/Address/Address'
 import Budget from './pages/PostJob/PostJobSteps/Budget/Budget'
 import WorkType from './pages/WorkType/WorkType';
+import UserName from './pages/Registration/RegistrationSteps/BuildProfile/BuildProfileSteps/UserName/UserName';
+import DefaultAddress from './pages/Registration/RegistrationSteps/BuildProfile/BuildProfileSteps/DefaultAddress';
 
 function App() {
   const [showNav, setShowNav] = useState(true);
@@ -42,6 +44,8 @@ function App() {
           <Route path="sign-up" element={<SignUp />} />
           <Route path="build-profile" element={<BuildProfile />}>
             <Route path="profile-picture" element={<ProfilePicture />} />
+            <Route path="user-name" element={<UserName/>}/>
+            <Route path="default-address" element={<DefaultAddress/>}/>
             {/* <Route path="mobile-number" element={<MobileNumber />} /> */}
             {/* <Route path="verification" element={<Verification />} /> */}
           </Route>
