@@ -1,0 +1,19 @@
+.description p{
+    margin-bottom: 10px;
+    width: 400px;
+}
+.head h3{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.price h3{
+    margin-left:150px;
+    font-weight: 500;
+    font-size: 24px;
+    margin-top: 10px;
+}
+.button{
+    margin-left: 655px;
+}
